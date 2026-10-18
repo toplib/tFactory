@@ -1,0 +1,69 @@
+[audio]
+enabled = true
+recording-enabled = false
+volume-master = 1
+volume-regular = 1
+volume-ui = 1
+volume-ambient = 1
+volume-music = 1
+input-device = ""
+acoustic-effects = true
+
+[display]
+width = 950
+height = 1023
+samples = 0
+framerate = -1
+limit-fps-iconified = false
+window-mode = 0
+adaptive-menu-fps = false
+
+[camera]
+sensitivity = 2
+fov = 90
+fov-effects = true
+shaking = true
+inertia = true
+
+[chunks]
+load-distance = 22
+load-speed = 4
+padding = 2
+
+[graphics]
+enable-fog = true
+fog-curve = 1
+backlight = true
+dense-render = true
+gamma = 1
+frustum-culling = true
+skybox-resolution = 96
+chunk-max-vertices = 200000
+chunk-max-vertices-dense = 800000
+chunk-max-renderers = 6
+particles-batch-vertices = 4096
+advanced-render = true
+ssao = 2
+shadows-quality = 3
+dense-render-distance = 56
+soft-lighting = true
+clouds-quality = 2
+
+[ui]
+language = "en_US"
+world-preview-size = 64
+
+[pathfinding]
+steps-per-async-agent = 128
+
+[debug]
+generator-test-mode = false
+do-write-lights = true
+do-trace-shaders = false
+enable-experimental = false
+
+[system]
+max-bg-asset-loaders = 3
+preserve-assets-during-frame = true
+direct-scripting-data-access = true
+

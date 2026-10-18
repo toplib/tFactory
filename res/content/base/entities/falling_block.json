@@ -1,0 +1,8 @@
+{
+    "components": [
+        "base:falling_block"
+    ],
+    "skeleton-name": "base:block",
+    "hitbox": [0.98, 0.98, 0.98],
+    "solid": true
+}

@@ -1,0 +1,2 @@
+#!/bin/bash
+./voxelcore-0.32.6_x86-64.AppImage --res res/ --dir .

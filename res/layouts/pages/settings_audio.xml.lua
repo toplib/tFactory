@@ -1,0 +1,105 @@
+function create_trackbar_setting(id, name, step, postfix)
+    local info = app.get_setting_info(id)
+    postfix = postfix or ""
+    document.root:add(gui.template("track_setting", {
+        id=id,
+        name=gui.str(name, "settings"),
+        value=app.get_setting(id),
+        min=info.min,
+        max=info.max,
+        step=step,
+        postfix=postfix
+    }))
+    update_trackbar_label(app.get_setting(id), id, name, postfix)
+end
+
+function update_trackbar_label(x, id, name, postfix)
+    app.set_setting(id, x)
+    -- updating label
+    document[id..".L"].text = string.format(
+        "%s: %s%s", 
+        gui.str(name, "settings"),
+        app.str_setting(id),
+        postfix
+    )
+end
+
+function update_checkbox_setting(id, value)
+    app.set_setting(id, value)
+
+    local recording_enabled = app.get_setting("audio.recording-enabled")
+    document.input_device_select.enabled = recording_enabled
+    document.input_volume_inner.enabled = recording_enabled
+    document.input_volume_outer.enabled = recording_enabled
+
+    local selectbox = document.input_device_select
+    local info = audio.input.get_input_info()
+    if info then
+        selectbox.value = info.device_specifier
+    else
+        selectbox.value = app.get_setting("audio.input-device")
+    end
+end
+
+function create_checkbox(id, name, tooltip)
+    tooltip = tooltip or ''
+    document.root:add(string.format(
+        "<checkbox consumer='function(x) update_checkbox_setting(\"%s\", x) end' checked='%s' tooltip='%s'>%s</checkbox>",
+        id, app.str_setting(id), gui.str(tooltip, "settings"), gui.str(name, "settings")
+    ))
+    update_checkbox_setting(id, app.get_setting(id))
+end
+
+local initialized = false
+
+function on_open()
+    if not initialized then
+        initialized = true
+        local token = core.get_core_token()
+        document.root:add("<container id='tm' />")
+        local prev_amplitude = 0.0
+        document.tm:setInterval(16, function()
+            audio.input.fetch(token)
+            local amplitude = audio.input.get_max_amplitude()
+            if amplitude > 0.0 then
+                amplitude = math.sqrt(amplitude)
+            end
+            amplitude = math.max(amplitude, prev_amplitude - time.delta())
+            document.input_volume_inner.size = {
+                prev_amplitude *
+                document.input_volume_outer.size[1],
+                document.input_volume_outer.size[2]
+            }
+            prev_amplitude = amplitude
+        end)
+    end
+    create_trackbar_setting("audio.volume-master", "Master Volume", 0.01)
+    create_trackbar_setting("audio.volume-regular", "Regular Sounds", 0.01)
+    create_trackbar_setting("audio.volume-ui", "UI Sounds", 0.01)
+    create_trackbar_setting("audio.volume-ambient", "Ambient", 0.01)
+    create_trackbar_setting("audio.volume-music", "Music", 0.01)
+
+    document.root:add("<label context='settings'>@Microphone</label>")
+    document.root:add("<select id='input_device_select' "..
+        "onselect='function(opt) app.set_setting(\"audio.input-device\", opt) end'/>")
+    document.root:add("<container id='input_volume_outer' color='#000000' size='4'>"
+                        .."<container id='input_volume_inner' color='#00FF00FF' pos='1' size='2'/>"
+                    .."</container>")
+    local selectbox = document.input_device_select
+    local devices = {}
+    local names = audio.__get_input_devices_names()
+    for i, name in ipairs(names) do
+        table.insert(devices, {value=name, text=name})
+    end
+    selectbox.options = devices
+
+    local info = audio.input.get_input_info()
+    if info then
+        selectbox.value = info.device_specifier
+    else
+        selectbox.value = app.get_setting("audio.input-device")
+    end
+
+    create_checkbox("audio.recording-enabled", "Microphone access", "audio.recording-enabled.tooltip")
+    create_checkbox("audio.acoustic-effects", "Acoustic effects", "audio.acoustic-effects.tooltip")
+end

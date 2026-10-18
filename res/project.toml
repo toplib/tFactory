@@ -1,0 +1,8 @@
+# default project
+name = "default"
+base_packs = ["base"]
+permissions = [
+    "network",
+    "record-audio",
+    "sub-instances",
+]
