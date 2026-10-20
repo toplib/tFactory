@@ -34,7 +34,8 @@
     "base:torch",
     "base:wooden_door",
     "base:coal_ore",
-    "base:ice"
+    "base:ice",
+    "tfactory:core-block"
   ],
   "items": [
     "core:empty",
@@ -66,7 +67,8 @@
     "base:wooden_door.item",
     "base:coal_ore.item",
     "base:ice.item",
-    "base:bazalt_breaker"
+    "base:bazalt_breaker",
+    "tfactory:core-block.item"
   ],
   "region-version": 3
 }

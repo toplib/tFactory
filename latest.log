@@ -1,267 +1,1672 @@
-[I] 2026/10/18 18:42:58.073+0300 [              engine] engine version: 0.32
-[I] 2026/10/18 18:42:58.119+0300 [        engine-paths] executable path: /tmp/.mount_voxelc8GOKDd/usr/bin/VoxelCore
-[I] 2026/10/18 18:42:58.128+0300 [        engine-paths] resources folder: /media/games/ultramegafactoryvoxelcore99999/res
-[I] 2026/10/18 18:42:58.128+0300 [        engine-paths] user files folder: /media/games/ultramegafactoryvoxelcore99999
-[I] 2026/10/18 18:42:58.128+0300 [        engine-paths] project folder: /media/games/ultramegafactoryvoxelcore99999/res
-[I] 2026/10/18 18:42:58.164+0300 [             project] permissions: 
-[I] 2026/10/18 18:42:58.180+0300 [             project]  - network
-[I] 2026/10/18 18:42:58.180+0300 [             project]  - record-audio
-[I] 2026/10/18 18:42:58.180+0300 [             project]  - sub-instances
-[I] 2026/10/18 18:42:58.198+0300 [              engine] loaded project "default"
-[I] 2026/10/18 18:42:58.198+0300 [             network] initializing network
-[I] 2026/10/18 18:42:58.220+0300 [              engine] loading settings
-[I] 2026/10/18 18:42:58.898+0300 [              window] max texture size is 16384
-[I] 2026/10/18 18:42:58.899+0300 [              window] monitor content scale: 1x1
-[I] 2026/10/18 18:42:58.915+0300 [              window] max texture size is 16384
-[I] 2026/10/18 18:42:58.923+0300 [              window] GL Vendor: AMD
-[I] 2026/10/18 18:42:58.923+0300 [              window] GL Renderer: AMD Radeon RX 6600 LE (radeonsi, navi23, ACO, DRM 3.64, 7.2.7-arch1-1)
-[I] 2026/10/18 18:42:58.923+0300 [              window] GLFW: 3.3.6 X11 GLX EGL OSMesa clock_gettime evdev shared
-[I] 2026/10/18 18:42:59.009+0300 [              engine] loading controls
-[I] 2026/10/18 18:42:59.024+0300 [               audio] initializing ALAudio backend
-[I] 2026/10/18 18:42:59.274+0300 [            al-audio] AL effects extension present
-[I] 2026/10/18 18:42:59.289+0300 [            al-audio] device supports 2 aux sends per source
-[I] 2026/10/18 18:42:59.299+0300 [            al-audio] initialized
-[I] 2026/10/18 18:42:59.300+0300 [            al-audio] max mono sources: 255
-[I] 2026/10/18 18:42:59.313+0300 [            al-audio] output devices:
-[I] 2026/10/18 18:42:59.313+0300 [            al-audio]   JACK Default
-[I] 2026/10/18 18:42:59.326+0300 [            al-audio] input devices:
-[I] 2026/10/18 18:42:59.332+0300 [            al-audio]   Condenser Analog Stereo
-[I] 2026/10/18 18:42:59.332+0300 [            al-audio]   Monitor of Navi 21/23 HDMI/DP Audio Controller Digital Stereo (HDMI) [Philips 231E]
-[I] 2026/10/18 18:42:59.332+0300 [            al-audio]   Monitor of Starship/Matisse HD Audio Controller Analog Stereo
-[I] 2026/10/18 18:42:59.346+0300 [            al-audio]   Starship/Matisse HD Audio Controller Analog Stereo
-[I] 2026/10/18 18:42:59.346+0300 [            al-audio]   Monitor of Condenser Analog Stereo
-[I] 2026/10/18 18:42:59.347+0300 [            al-audio] created 64 effect slots
-[I] 2026/10/18 18:42:59.369+0300 [            al-audio] created 4 effects
-[I] 2026/10/18 18:42:59.370+0300 [            al-audio] successfully loaded effect into effect slot
-[I] 2026/10/18 18:42:59.387+0300 [           lua-state] Lua 5.1
-[I] 2026/10/18 18:42:59.396+0300 [           lua-state] LuaJIT 2.1.0-beta3
-[I] 2026/10/18 18:43:00.592+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[W] 2026/10/18 18:43:00.592+0300 [         app-scripts] script does not exists: 
-[I] 2026/10/18 18:43:00.592+0300 [         app-scripts] starting project client script: project:project_client.lua
-[I] 2026/10/18 18:43:00.592+0300 [            mainloop] starting menu screen
-[I] 2026/10/18 18:43:00.592+0300 [           lua-debug] cleaning scripts cache
-[I] 2026/10/18 18:43:00.593+0300 [           lua-debug] no non-reset packs
-[I] 2026/10/18 18:43:00.597+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2026/10/18 18:43:00.799+0300 [              engine] loading bindings: res:config/bindings.toml
-[I] 2026/10/18 18:43:00.799+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
-[I] 2026/10/18 18:43:00.799+0300 [   assets-management] loading assets
-[I] 2026/10/18 18:43:00.800+0300 [       assets-loader] loading textures/blocks as blocks
-[I] 2026/10/18 18:43:03.594+0300 [       assets-loader] loading textures/items as items
-[I] 2026/10/18 18:43:03.643+0300 [       assets-loader] loading textures/particles as particles
-[I] 2026/10/18 18:43:03.761+0300 [       assets-loader] loading fonts/font as normal
-[I] 2026/10/18 18:43:18.144+0300 [       assets-loader] loading models/block as block
-[I] 2026/10/18 18:43:18.224+0300 [     assetload-funcs] store model "block" as "block"
-[I] 2026/10/18 18:43:18.224+0300 [       assets-loader] loading shaders/effects/default as default
-[I] 2026/10/18 18:43:18.273+0300 [       assets-loader] loading shaders/effects/ssao as ssao
-[I] 2026/10/18 18:43:18.302+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
-[I] 2026/10/18 18:43:18.392+0300 [       assets-loader] loading shaders/ui as ui
-[I] 2026/10/18 18:43:18.406+0300 [       assets-loader] loading shaders/ui3d as ui3d
-[I] 2026/10/18 18:43:18.407+0300 [       assets-loader] loading shaders/main as main
-[I] 2026/10/18 18:43:18.565+0300 [       assets-loader] loading shaders/lines as lines
-[I] 2026/10/18 18:43:18.650+0300 [       assets-loader] loading shaders/entity as entity
-[I] 2026/10/18 18:43:18.696+0300 [       assets-loader] loading shaders/translucent as translucent
-[I] 2026/10/18 18:43:18.744+0300 [       assets-loader] loading shaders/background as background
-[I] 2026/10/18 18:43:18.795+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
-[I] 2026/10/18 18:43:18.886+0300 [       assets-loader] loading shaders/shadows as shadows
-[I] 2026/10/18 18:43:18.946+0300 [       assets-loader] loading shaders/clouds as clouds
-[I] 2026/10/18 18:43:19.061+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
-[I] 2026/10/18 18:43:19.063+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
-[I] 2026/10/18 18:43:19.085+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
-[I] 2026/10/18 18:43:19.106+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
-[I] 2026/10/18 18:43:19.134+0300 [       assets-loader] loading textures/gui/warning as gui/warning
-[I] 2026/10/18 18:43:19.172+0300 [       assets-loader] loading textures/gui/error as gui/error
-[I] 2026/10/18 18:43:19.196+0300 [       assets-loader] loading textures/gui/cross as gui/cross
-[I] 2026/10/18 18:43:19.210+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
-[I] 2026/10/18 18:43:19.229+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
-[I] 2026/10/18 18:43:19.320+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
-[I] 2026/10/18 18:43:19.336+0300 [       assets-loader] loading textures/misc/rain as misc/rain
-[I] 2026/10/18 18:43:19.372+0300 [       assets-loader] loading textures/misc/snow as misc/snow
-[I] 2026/10/18 18:43:19.399+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
-[I] 2026/10/18 18:43:19.431+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
-[I] 2026/10/18 18:43:19.452+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
-[I] 2026/10/18 18:43:19.475+0300 [       assets-loader] loading textures/gui/lock as gui/lock
-[I] 2026/10/18 18:43:19.495+0300 [       assets-loader] loading textures/gui/save as gui/save
-[I] 2026/10/18 18:43:19.526+0300 [       assets-loader] loading textures/gui/block as gui/block
-[I] 2026/10/18 18:43:19.583+0300 [       assets-loader] loading textures/gui/item as gui/item
-[I] 2026/10/18 18:43:19.660+0300 [       assets-loader] loading textures/gui/file as gui/file
-[I] 2026/10/18 18:43:19.661+0300 [       assets-loader] loading textures/gui/module as gui/module
-[I] 2026/10/18 18:43:19.720+0300 [       assets-loader] loading textures/gui/play as gui/play
-[I] 2026/10/18 18:43:19.756+0300 [       assets-loader] loading textures/gui/info as gui/info
-[I] 2026/10/18 18:43:19.793+0300 [       assets-loader] loading textures/gui/world as gui/world
-[I] 2026/10/18 18:43:19.808+0300 [       assets-loader] loading textures/gui/hud as gui/hud
-[I] 2026/10/18 18:43:19.827+0300 [       assets-loader] loading textures/gui/entity as gui/entity
-[I] 2026/10/18 18:43:19.849+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
-[I] 2026/10/18 18:43:19.879+0300 [       assets-loader] loading textures/misc/blank as 
-[I] 2026/10/18 18:43:19.956+0300 [            mainloop] main loop started
-[I] 2026/10/18 18:43:26.123+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
-[I] 2026/10/18 18:43:26.971+0300 [      content-loader] loading pack [core]
-[I] 2026/10/18 18:43:27.318+0300 [      content-loader] loading pack [base]
-[I] 2026/10/18 18:43:27.915+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
-[I] 2026/10/18 18:43:27.970+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
-[I] 2026/10/18 18:43:27.984+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
-[I] 2026/10/18 18:43:28.081+0300 [    generator-loader] fragment tower has size [8, 18, 8]
-[I] 2026/10/18 18:43:28.130+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
-[I] 2026/10/18 18:43:31.445+0300 [      content-loader] loading pack [tfactory]
-[I] 2026/10/18 18:43:32.159+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
-[I] 2026/10/18 18:43:32.288+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
-[I] 2026/10/18 18:43:32.404+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
-[I] 2026/10/18 18:43:32.540+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
-[I] 2026/10/18 18:43:33.046+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
-[I] 2026/10/18 18:43:33.175+0300 [           scripting] script (world) project:content/base/scripts/world.lua
-[I] 2026/10/18 18:43:33.193+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
-[I] 2026/10/18 18:43:33.194+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
-[I] 2026/10/18 18:43:33.194+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
-[I] 2026/10/18 18:43:33.195+0300 [           scripting] script (world) res:scripts/world.lua
-[I] 2026/10/18 18:43:33.195+0300 [           scripting] script (component) res:scripts/components/animator.lua
-[I] 2026/10/18 18:43:33.196+0300 [           scripting] script (component) res:scripts/components/mob.lua
-[I] 2026/10/18 18:43:33.196+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
-[I] 2026/10/18 18:43:33.197+0300 [           scripting] script (component) res:scripts/components/player.lua
-[I] 2026/10/18 18:43:33.200+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2026/10/18 18:43:33.201+0300 [              engine] loading bindings: res:config/bindings.toml
-[I] 2026/10/18 18:43:33.282+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
-[I] 2026/10/18 18:43:33.314+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
-[I] 2026/10/18 18:43:33.324+0300 [   assets-management] loading assets
-[I] 2026/10/18 18:43:33.567+0300 [       assets-loader] loading textures/blocks as blocks
-[I] 2026/10/18 18:43:34.407+0300 [       assets-loader] loading textures/items as items
-[I] 2026/10/18 18:43:34.408+0300 [       assets-loader] loading textures/particles as particles
-[I] 2026/10/18 18:43:34.412+0300 [       assets-loader] loading fonts/font as normal
-[I] 2026/10/18 18:43:34.643+0300 [       assets-loader] loading models/block as block
-[I] 2026/10/18 18:43:34.644+0300 [     assetload-funcs] store model "block" as "block"
-[I] 2026/10/18 18:43:34.644+0300 [       assets-loader] loading shaders/effects/default as default
-[I] 2026/10/18 18:43:34.645+0300 [       assets-loader] loading shaders/effects/ssao as ssao
-[I] 2026/10/18 18:43:34.646+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
-[I] 2026/10/18 18:43:34.648+0300 [       assets-loader] loading shaders/ui as ui
-[I] 2026/10/18 18:43:34.649+0300 [       assets-loader] loading shaders/ui3d as ui3d
-[I] 2026/10/18 18:43:34.650+0300 [       assets-loader] loading shaders/main as main
-[I] 2026/10/18 18:43:34.651+0300 [       assets-loader] loading shaders/lines as lines
-[I] 2026/10/18 18:43:34.652+0300 [       assets-loader] loading shaders/entity as entity
-[I] 2026/10/18 18:43:34.653+0300 [       assets-loader] loading shaders/translucent as translucent
-[I] 2026/10/18 18:43:34.654+0300 [       assets-loader] loading shaders/background as background
-[I] 2026/10/18 18:43:34.655+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
-[I] 2026/10/18 18:43:34.656+0300 [       assets-loader] loading shaders/shadows as shadows
-[I] 2026/10/18 18:43:34.658+0300 [       assets-loader] loading shaders/clouds as clouds
-[I] 2026/10/18 18:43:34.659+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
-[I] 2026/10/18 18:43:34.659+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
-[I] 2026/10/18 18:43:34.660+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
-[I] 2026/10/18 18:43:34.661+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
-[I] 2026/10/18 18:43:34.661+0300 [       assets-loader] loading textures/gui/warning as gui/warning
-[I] 2026/10/18 18:43:34.662+0300 [       assets-loader] loading textures/gui/error as gui/error
-[I] 2026/10/18 18:43:34.663+0300 [       assets-loader] loading textures/gui/cross as gui/cross
-[I] 2026/10/18 18:43:34.663+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
-[I] 2026/10/18 18:43:34.664+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
-[I] 2026/10/18 18:43:34.664+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
-[I] 2026/10/18 18:43:34.665+0300 [       assets-loader] loading textures/misc/rain as misc/rain
-[I] 2026/10/18 18:43:34.670+0300 [       assets-loader] loading textures/misc/snow as misc/snow
-[I] 2026/10/18 18:43:34.671+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
-[I] 2026/10/18 18:43:34.671+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
-[I] 2026/10/18 18:43:34.671+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
-[I] 2026/10/18 18:43:34.672+0300 [       assets-loader] loading textures/gui/lock as gui/lock
-[I] 2026/10/18 18:43:34.672+0300 [       assets-loader] loading textures/gui/save as gui/save
-[I] 2026/10/18 18:43:34.673+0300 [       assets-loader] loading textures/gui/block as gui/block
-[I] 2026/10/18 18:43:34.673+0300 [       assets-loader] loading textures/gui/item as gui/item
-[I] 2026/10/18 18:43:34.674+0300 [       assets-loader] loading textures/gui/file as gui/file
-[I] 2026/10/18 18:43:34.674+0300 [       assets-loader] loading textures/gui/module as gui/module
-[I] 2026/10/18 18:43:34.675+0300 [       assets-loader] loading textures/gui/play as gui/play
-[I] 2026/10/18 18:43:34.675+0300 [       assets-loader] loading textures/gui/info as gui/info
-[I] 2026/10/18 18:43:34.676+0300 [       assets-loader] loading textures/gui/world as gui/world
-[I] 2026/10/18 18:43:34.677+0300 [       assets-loader] loading textures/gui/hud as gui/hud
-[I] 2026/10/18 18:43:34.677+0300 [       assets-loader] loading textures/gui/entity as gui/entity
-[I] 2026/10/18 18:43:34.678+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
-[I] 2026/10/18 18:43:34.678+0300 [       assets-loader] loading textures/misc/blank as 
-[I] 2026/10/18 18:43:34.679+0300 [       assets-loader] loading textures/cracks as cracks
-[I] 2026/10/18 18:43:34.679+0300 [       assets-loader] loading models/drop-item as drop-item
-[I] 2026/10/18 18:43:34.679+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
-[I] 2026/10/18 18:43:34.680+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
-[I] 2026/10/18 18:43:34.682+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
-[I] 2026/10/18 18:43:34.683+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
-[I] 2026/10/18 18:43:34.684+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
-[I] 2026/10/18 18:43:34.700+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
-[I] 2026/10/18 18:43:34.725+0300 [       assets-loader] loading textures/misc/moon as misc/moon
-[I] 2026/10/18 18:43:34.728+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
-[I] 2026/10/18 18:43:34.730+0300 [       assets-loader] loading textures/misc/sun as misc/sun
-[I] 2026/10/18 18:43:34.733+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
-[I] 2026/10/18 18:43:34.733+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
-[I] 2026/10/18 18:43:34.739+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
-[I] 2026/10/18 18:43:34.741+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
-[I] 2026/10/18 18:43:34.744+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
-[I] 2026/10/18 18:43:34.746+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
-[I] 2026/10/18 18:43:34.751+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
-[I] 2026/10/18 18:43:34.753+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
-[I] 2026/10/18 18:43:34.756+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
-[I] 2026/10/18 18:43:34.758+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
-[I] 2026/10/18 18:43:34.766+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
-[I] 2026/10/18 18:43:34.768+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
-[I] 2026/10/18 18:43:34.771+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
-[I] 2026/10/18 18:43:34.776+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
-[I] 2026/10/18 18:43:34.779+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
-[I] 2026/10/18 18:43:34.781+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
-[I] 2026/10/18 18:43:34.788+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
-[I] 2026/10/18 18:43:34.790+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
-[I] 2026/10/18 18:43:34.795+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
-[I] 2026/10/18 18:43:34.803+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
-[I] 2026/10/18 18:43:34.807+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
-[I] 2026/10/18 18:43:34.808+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
-[I] 2026/10/18 18:43:34.814+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
-[I] 2026/10/18 18:43:34.816+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
-[I] 2026/10/18 18:43:34.818+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
-[I] 2026/10/18 18:43:34.822+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
-[I] 2026/10/18 18:43:34.824+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
-[I] 2026/10/18 18:43:34.825+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
-[I] 2026/10/18 18:43:34.828+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
-[I] 2026/10/18 18:43:34.829+0300 [       assets-loader] loading res:layouts/console.xml as core:console
-[I] 2026/10/18 18:43:34.829+0300 [           scripting] script (layout) res:layouts/console.xml.lua
-[I] 2026/10/18 18:43:34.829+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
-[I] 2026/10/18 18:43:34.830+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
-[I] 2026/10/18 18:43:34.830+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
-[I] 2026/10/18 18:43:34.830+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
-[I] 2026/10/18 18:43:34.830+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
-[I] 2026/10/18 18:43:34.831+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
-[I] 2026/10/18 18:43:34.831+0300 [       assets-loader] loading res:layouts/process.xml as core:process
-[I] 2026/10/18 18:43:34.831+0300 [           scripting] script (layout) res:layouts/process.xml.lua
-[I] 2026/10/18 18:43:34.832+0300 [       assets-loader] loading base:skeletons/block as base:block
-[I] 2026/10/18 18:43:34.832+0300 [       assets-loader] loading base:skeletons/drop as base:drop
-[I] 2026/10/18 18:43:34.833+0300 [       assets-loader] loading base:skeletons/hand as base:hand
-[I] 2026/10/18 18:43:34.833+0300 [       assets-loader] loading base:skeletons/player as base:player
-[I] 2026/10/18 18:43:34.833+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
-[I] 2026/10/18 18:43:34.834+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
-[I] 2026/10/18 18:43:34.834+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
-[I] 2026/10/18 18:43:34.835+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
-[I] 2026/10/18 18:43:34.835+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
-[I] 2026/10/18 18:43:34.836+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
-[I] 2026/10/18 18:43:34.836+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
-[I] 2026/10/18 18:43:34.837+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
-[I] 2026/10/18 18:43:34.837+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
-[I] 2026/10/18 18:43:34.837+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
-[I] 2026/10/18 18:43:34.838+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
-[I] 2026/10/18 18:43:34.838+0300 [       assets-loader] loading models/drop-block as drop-block
-[I] 2026/10/18 18:43:34.839+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
-[I] 2026/10/18 18:43:34.839+0300 [       assets-loader] loading models/player-body as player-body
-[I] 2026/10/18 18:43:34.839+0300 [     assetload-funcs] store model "player-body" as "player-body"
-[I] 2026/10/18 18:43:34.839+0300 [       assets-loader] loading models/player-head as player-head
-[I] 2026/10/18 18:43:34.839+0300 [     assetload-funcs] store model "player-head" as "player-head"
-[I] 2026/10/18 18:43:34.839+0300 [       assets-loader] loading textures/entities/player as entities/player
-[I] 2026/10/18 18:43:34.842+0300 [               world] loading world test (user:worlds/test)
-[I] 2026/10/18 18:43:34.842+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
-[I] 2026/10/18 18:43:34.843+0300 [              engine] world open
-[I] 2026/10/18 18:43:34.843+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
-[I] 2026/10/18 18:43:34.845+0300 [     world-generator] total number of prototype levels is 11
-[I] 2026/10/18 18:43:34.849+0300 [   content-gfx-cache] uv cache size is 89088 B
-[I] 2026/10/18 18:43:34.909+0300 [       chunks-render] created 6 workers
-[I] 2026/10/18 18:43:34.910+0300 [       chunks-render] memory consumption is 43200000 B
-[I] 2026/10/18 18:43:35.118+0300 [        level-screen] initializing pack 'tfactory'
-[I] 2026/10/18 18:43:35.119+0300 [        level-screen] initializing pack 'base'
-[I] 2026/10/18 18:43:35.119+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
-[I] 2026/10/18 18:43:35.119+0300 [        level-screen] initializing pack 'core'
-[I] 2026/10/18 18:43:35.120+0300 [       scripting-hud] loading script res:scripts/hud.lua
-[I] 2026/10/18 18:43:35.120+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
-[I] 2026/10/18 18:43:35.133+0300 [      world-renderer] recompiling shaders due to settings change
-[I] 2026/10/18 18:43:36.813+0300 [            mainloop] main loop stopped
-[I] 2026/10/18 18:43:36.813+0300 [              engine] saving settings
-[I] 2026/10/18 18:43:36.813+0300 [              engine] saving bindings
-[I] 2026/10/18 18:43:36.813+0300 [              engine] shutting down
-[I] 2026/10/18 18:43:36.813+0300 [        level-screen] saving world preview
-[I] 2026/10/18 18:43:36.840+0300 [       level-control] writing world 'test'
-[I] 2026/10/18 18:43:36.873+0300 [              engine] gui finished
-[I] 2026/10/18 18:43:36.875+0300 [              engine] scripting finished
-[I] 2026/10/18 18:43:36.885+0300 [              engine] window closed
-[I] 2026/10/18 18:43:36.885+0300 [              engine] engine finished
+[I] 2026/10/20 20:09:43.323+0300 [              engine] engine version: 0.32
+[I] 2026/10/20 20:09:43.324+0300 [        engine-paths] executable path: /tmp/.mount_voxelcvvHbYo/usr/bin/VoxelCore
+[I] 2026/10/20 20:09:43.324+0300 [        engine-paths] resources folder: /media/games/ultramegafactoryvoxelcore99999/res
+[I] 2026/10/20 20:09:43.324+0300 [        engine-paths] user files folder: /media/games/ultramegafactoryvoxelcore99999
+[I] 2026/10/20 20:09:43.324+0300 [        engine-paths] project folder: /media/games/ultramegafactoryvoxelcore99999/res
+[I] 2026/10/20 20:09:43.326+0300 [             project] permissions: 
+[I] 2026/10/20 20:09:43.326+0300 [             project]  - network
+[I] 2026/10/20 20:09:43.326+0300 [             project]  - record-audio
+[I] 2026/10/20 20:09:43.326+0300 [             project]  - sub-instances
+[I] 2026/10/20 20:09:43.326+0300 [              engine] loaded project "default"
+[I] 2026/10/20 20:09:43.326+0300 [             network] initializing network
+[I] 2026/10/20 20:09:43.328+0300 [              engine] loading settings
+[I] 2026/10/20 20:09:43.688+0300 [              window] max texture size is 16384
+[I] 2026/10/20 20:09:43.689+0300 [              window] monitor content scale: 1x1
+[I] 2026/10/20 20:09:43.693+0300 [              window] max texture size is 16384
+[I] 2026/10/20 20:09:43.693+0300 [              window] GL Vendor: AMD
+[I] 2026/10/20 20:09:43.693+0300 [              window] GL Renderer: AMD Radeon RX 6600 LE (radeonsi, navi23, ACO, DRM 3.64, 7.2.7-arch1-1)
+[I] 2026/10/20 20:09:43.693+0300 [              window] GLFW: 3.3.6 X11 GLX EGL OSMesa clock_gettime evdev shared
+[I] 2026/10/20 20:09:43.711+0300 [              engine] loading controls
+[I] 2026/10/20 20:09:43.713+0300 [               audio] initializing ALAudio backend
+[I] 2026/10/20 20:09:43.733+0300 [            al-audio] AL effects extension present
+[I] 2026/10/20 20:09:43.738+0300 [            al-audio] device supports 2 aux sends per source
+[I] 2026/10/20 20:09:43.738+0300 [            al-audio] initialized
+[I] 2026/10/20 20:09:43.739+0300 [            al-audio] max mono sources: 255
+[I] 2026/10/20 20:09:43.739+0300 [            al-audio] output devices:
+[I] 2026/10/20 20:09:43.739+0300 [            al-audio]   JACK Default
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio] input devices:
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio]   Condenser Analog Stereo
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio]   Monitor of Navi 21/23 HDMI/DP Audio Controller Digital Stereo (HDMI) [Philips 231E]
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio]   Monitor of Starship/Matisse HD Audio Controller Analog Stereo
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio]   Starship/Matisse HD Audio Controller Analog Stereo
+[I] 2026/10/20 20:09:43.752+0300 [            al-audio]   Monitor of Condenser Analog Stereo
+[I] 2026/10/20 20:09:43.753+0300 [            al-audio] created 64 effect slots
+[I] 2026/10/20 20:09:43.753+0300 [            al-audio] created 4 effects
+[I] 2026/10/20 20:09:43.754+0300 [            al-audio] successfully loaded effect into effect slot
+[I] 2026/10/20 20:09:43.758+0300 [           lua-state] Lua 5.1
+[I] 2026/10/20 20:09:43.758+0300 [           lua-state] LuaJIT 2.1.0-beta3
+[I] 2026/10/20 20:09:43.809+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[W] 2026/10/20 20:09:43.809+0300 [         app-scripts] script does not exists: 
+[I] 2026/10/20 20:09:43.809+0300 [         app-scripts] starting project client script: project:project_client.lua
+[I] 2026/10/20 20:09:43.810+0300 [            mainloop] starting menu screen
+[I] 2026/10/20 20:09:43.810+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:09:43.810+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:09:43.813+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:09:43.814+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:09:43.814+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:09:43.814+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:09:43.815+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:09:43.841+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:09:43.842+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:09:43.845+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:09:44.041+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:09:44.042+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:09:44.042+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:09:44.046+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:09:44.048+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:09:44.064+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:09:44.065+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:09:44.066+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:09:44.069+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:09:44.070+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:09:44.071+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:09:44.072+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:09:44.074+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:09:44.075+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:09:44.076+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:09:44.076+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:09:44.077+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:09:44.078+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:09:44.078+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:09:44.079+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:09:44.079+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:09:44.080+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:09:44.080+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:09:44.081+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:09:44.081+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:09:44.082+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:09:44.088+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:09:44.089+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:09:44.089+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:09:44.090+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:09:44.090+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:09:44.091+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:09:44.091+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:09:44.092+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:09:44.092+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:09:44.092+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:09:44.093+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:09:44.093+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:09:44.094+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:09:44.094+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:09:44.094+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:09:44.095+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:09:44.095+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:09:44.099+0300 [            mainloop] main loop started
+[I] 2026/10/20 20:09:45.601+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:09:46.038+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:09:46.045+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:09:46.054+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:09:46.054+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:09:46.055+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:09:46.055+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:09:46.056+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:09:46.083+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:09:46.092+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:09:46.092+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:09:46.093+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:09:46.094+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:09:46.095+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:09:46.097+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:09:46.098+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:09:46.098+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:09:46.098+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:09:46.099+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:09:46.099+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:09:46.100+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:09:46.100+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:09:46.100+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:09:46.101+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:09:46.102+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:09:46.103+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:09:46.103+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:09:46.103+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:09:46.104+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:09:46.105+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:09:46.129+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:09:46.130+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:09:46.134+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:09:46.352+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:09:46.353+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:09:46.353+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:09:46.354+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:09:46.356+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:09:46.357+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:09:46.358+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:09:46.359+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:09:46.360+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:09:46.361+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:09:46.362+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:09:46.363+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:09:46.364+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:09:46.366+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:09:46.367+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:09:46.368+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:09:46.369+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:09:46.369+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:09:46.370+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:09:46.370+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:09:46.370+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:09:46.371+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:09:46.371+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:09:46.372+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:09:46.372+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:09:46.373+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:09:46.377+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:09:46.378+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:09:46.379+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:09:46.379+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:09:46.380+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:09:46.380+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:09:46.380+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:09:46.381+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:09:46.381+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:09:46.382+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:09:46.382+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:09:46.383+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:09:46.383+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:09:46.383+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:09:46.384+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:09:46.384+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:09:46.385+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:09:46.385+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:09:46.385+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:09:46.386+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:09:46.386+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:09:46.388+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:09:46.389+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:09:46.391+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:09:46.405+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:09:46.429+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:09:46.433+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:09:46.436+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:09:46.439+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:09:46.440+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:09:46.444+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:09:46.446+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:09:46.449+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:09:46.450+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:09:46.454+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:09:46.456+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:09:46.458+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:09:46.460+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:09:46.467+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:09:46.469+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:09:46.471+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:09:46.476+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:09:46.479+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:09:46.481+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:09:46.487+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:09:46.489+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:09:46.494+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:09:46.502+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:09:46.505+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:09:46.507+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:09:46.512+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:09:46.513+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:09:46.515+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:09:46.521+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:09:46.523+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:09:46.524+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:09:46.525+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:09:46.525+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:09:46.525+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:09:46.528+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:09:46.528+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:09:46.529+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:09:46.529+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:09:46.529+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:09:46.529+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:09:46.530+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:09:46.530+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:09:46.530+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:09:46.531+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:09:46.531+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:09:46.531+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:09:46.532+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:09:46.533+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:09:46.533+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:09:46.533+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:09:46.534+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:09:46.534+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:09:46.535+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:09:46.535+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:09:46.536+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:09:46.536+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:09:46.537+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:09:46.537+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:09:46.538+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:09:46.538+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:09:46.539+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:09:46.539+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:09:46.539+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:09:46.539+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:09:46.540+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:09:46.540+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:09:46.540+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:09:46.543+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:09:46.543+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:09:46.544+0300 [              engine] world open
+[I] 2026/10/20 20:09:46.545+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:09:46.545+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:09:46.549+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:09:46.588+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:09:46.589+0300 [       chunks-render] memory consumption is 43200000 B
+[I] 2026/10/20 20:09:46.800+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:09:46.800+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:09:46.800+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:09:46.801+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:09:46.801+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:09:46.801+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:09:46.807+0300 [      world-renderer] recompiling shaders due to settings change
+[E] 2026/10/20 20:09:47.344+0300 [           lua-debug] error in event (tfactory:core_block.interact) handler: [string "tfactory:scripts/core_block.lua"]:2: secondary UI root element must be 'inventory'
+stack traceback:
+	[C]: in function 'open'
+	[string "tfactory:scripts/core_block.lua"]:2: in function <[string "tfactory:scripts/core_block.lua"]:1>
+	[C]: in function 'xpcall'
+	[string "core:modules/internal/events.lua"]:55: in function <[string "core:modules/internal/events.lua"]:48>
+[I] 2026/10/20 20:10:48.451+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:10:48.503+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:10:48.523+0300 [              engine] world closed
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:10:48.529+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:10:48.532+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:10:48.533+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:10:48.533+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:10:48.533+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:10:48.534+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:10:48.554+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:10:48.555+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:10:48.558+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:10:48.727+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:10:48.727+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:10:48.727+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:10:48.728+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:10:48.730+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:10:48.731+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:10:48.732+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:10:48.733+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:10:48.734+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:10:48.735+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:10:48.736+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:10:48.737+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:10:48.738+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:10:48.739+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:10:48.740+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:10:48.741+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:10:48.741+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:10:48.742+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:10:48.742+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:10:48.743+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:10:48.743+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:10:48.743+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:10:48.744+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:10:48.744+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:10:48.744+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:10:48.744+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:10:48.749+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:10:48.750+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:10:48.751+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:10:48.751+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:10:48.752+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:10:48.752+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:10:48.752+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:10:48.753+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:10:48.753+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:10:48.753+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:10:48.754+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:10:48.754+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:10:48.754+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:10:48.755+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:10:48.755+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:10:48.755+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:10:48.756+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:10:49.252+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:10:49.555+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:10:49.562+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:10:49.572+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:10:49.573+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:10:49.573+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:10:49.574+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:10:49.575+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:10:49.601+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:10:49.610+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:10:49.610+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:10:49.610+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:10:49.612+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:10:49.613+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:10:49.615+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:10:49.615+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:10:49.615+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:10:49.616+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:10:49.616+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:10:49.616+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:10:49.617+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:10:49.617+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:10:49.617+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:10:49.618+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:10:49.619+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:10:49.619+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:10:49.620+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:10:49.620+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:10:49.620+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:10:49.621+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:10:49.644+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:10:49.645+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:10:49.648+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:10:49.859+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:10:49.860+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:10:49.860+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:10:49.861+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:10:49.863+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:10:49.864+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:10:49.865+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:10:49.866+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:10:49.867+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:10:49.868+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:10:49.869+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:10:49.871+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:10:49.872+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:10:49.873+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:10:49.874+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:10:49.875+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:10:49.876+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:10:49.876+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:10:49.877+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:10:49.877+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:10:49.877+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:10:49.878+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:10:49.878+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:10:49.879+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:10:49.879+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:10:49.880+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:10:49.885+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:10:49.885+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:10:49.886+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:10:49.886+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:10:49.887+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:10:49.887+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:10:49.887+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:10:49.888+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:10:49.888+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:10:49.889+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:10:49.889+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:10:49.890+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:10:49.890+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:10:49.891+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:10:49.891+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:10:49.891+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:10:49.892+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:10:49.892+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:10:49.893+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:10:49.893+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:10:49.893+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:10:49.895+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:10:49.896+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:10:49.897+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:10:49.911+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:10:49.936+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:10:49.941+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:10:49.943+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:10:49.947+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:10:49.947+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:10:49.952+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:10:49.954+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:10:49.957+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:10:49.958+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:10:49.963+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:10:49.966+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:10:49.968+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:10:49.970+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:10:49.979+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:10:49.980+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:10:49.982+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:10:49.987+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:10:49.989+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:10:49.991+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:10:49.996+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:10:49.998+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:10:50.003+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:10:50.010+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:10:50.013+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:10:50.015+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:10:50.020+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:10:50.022+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:10:50.024+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:10:50.028+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:10:50.030+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:10:50.031+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:10:50.032+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:10:50.032+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:10:50.032+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:10:50.032+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:10:50.033+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:10:50.033+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:10:50.033+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:10:50.034+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:10:50.034+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:10:50.034+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:10:50.034+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:10:50.035+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:10:50.035+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:10:50.035+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:10:50.035+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:10:50.036+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:10:50.036+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:10:50.036+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:10:50.036+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:10:50.037+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:10:50.037+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:10:50.038+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:10:50.038+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:10:50.039+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:10:50.039+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:10:50.040+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:10:50.040+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:10:50.041+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:10:50.041+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:10:50.042+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:10:50.042+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:10:50.042+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:10:50.043+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:10:50.043+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:10:50.043+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:10:50.043+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:10:50.044+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:10:50.044+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:10:50.045+0300 [              engine] world open
+[I] 2026/10/20 20:10:50.045+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:10:50.046+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:10:50.049+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:10:50.082+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:10:50.082+0300 [       chunks-render] memory consumption is 48115520 B
+[I] 2026/10/20 20:10:50.283+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:10:50.284+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:10:50.284+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:10:50.284+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:10:50.285+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:10:50.285+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:10:50.290+0300 [      world-renderer] recompiling shaders due to settings change
+[I] 2026/10/20 20:12:53.321+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:12:53.378+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:12:53.415+0300 [              engine] world closed
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:12:53.416+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:12:53.420+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:12:53.421+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:12:53.421+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:12:53.421+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:12:53.422+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:12:53.444+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:12:53.445+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:12:53.447+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:12:53.616+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:12:53.617+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:12:53.617+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:12:53.618+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:12:53.619+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:12:53.620+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:12:53.621+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:12:53.622+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:12:53.623+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:12:53.624+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:12:53.624+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:12:53.625+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:12:53.626+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:12:53.627+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:12:53.628+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:12:53.628+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:12:53.629+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:12:53.629+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:12:53.630+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:12:53.630+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:12:53.631+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:12:53.631+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:12:53.631+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:12:53.632+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:12:53.632+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:12:53.633+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:12:53.638+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:12:53.638+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:12:53.639+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:12:53.639+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:12:53.639+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:12:53.640+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:12:53.640+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:12:53.640+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:12:53.641+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:12:53.641+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:12:53.641+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:12:53.642+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:12:53.642+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:12:53.642+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:12:53.643+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:12:53.643+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:12:53.643+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:12:54.072+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:12:54.674+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:12:54.682+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:12:54.692+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:12:54.692+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:12:54.693+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:12:54.693+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:12:54.694+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:12:54.719+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:12:54.726+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:12:54.727+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:12:54.727+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:12:54.728+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:12:54.729+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:12:54.731+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:12:54.731+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:12:54.731+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:12:54.732+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:12:54.732+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:12:54.732+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:12:54.733+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:12:54.733+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:12:54.733+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:12:54.734+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:12:54.735+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:12:54.736+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:12:54.736+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:12:54.736+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:12:54.736+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:12:54.737+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:12:54.759+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:12:54.760+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:12:54.764+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:12:54.983+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:12:54.984+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:12:54.984+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:12:54.985+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:12:54.986+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:12:54.988+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:12:54.989+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:12:54.990+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:12:54.991+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:12:54.992+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:12:54.993+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:12:54.994+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:12:54.995+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:12:54.996+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:12:54.997+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:12:54.998+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:12:54.999+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:12:54.999+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:12:55.000+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:12:55.001+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:12:55.001+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:12:55.002+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:12:55.002+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:12:55.002+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:12:55.003+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:12:55.003+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:12:55.008+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:12:55.009+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:12:55.009+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:12:55.010+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:12:55.010+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:12:55.010+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:12:55.011+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:12:55.012+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:12:55.013+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:12:55.013+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:12:55.014+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:12:55.014+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:12:55.015+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:12:55.015+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:12:55.016+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:12:55.016+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:12:55.016+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:12:55.017+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:12:55.017+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:12:55.017+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:12:55.017+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:12:55.019+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:12:55.020+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:12:55.022+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:12:55.039+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:12:55.063+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:12:55.066+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:12:55.068+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:12:55.071+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:12:55.072+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:12:55.077+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:12:55.079+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:12:55.082+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:12:55.083+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:12:55.088+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:12:55.091+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:12:55.094+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:12:55.095+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:12:55.104+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:12:55.106+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:12:55.108+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:12:55.114+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:12:55.117+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:12:55.119+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:12:55.124+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:12:55.126+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:12:55.130+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:12:55.137+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:12:55.141+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:12:55.143+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:12:55.149+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:12:55.151+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:12:55.153+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:12:55.157+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:12:55.158+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:12:55.160+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:12:55.160+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:12:55.160+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:12:55.160+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:12:55.161+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:12:55.161+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:12:55.162+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:12:55.162+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:12:55.162+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:12:55.162+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:12:55.163+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:12:55.163+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:12:55.163+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:12:55.163+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:12:55.164+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:12:55.164+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:12:55.164+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:12:55.164+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:12:55.164+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:12:55.165+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:12:55.165+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:12:55.166+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:12:55.166+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:12:55.166+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:12:55.167+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:12:55.167+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:12:55.168+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:12:55.168+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:12:55.169+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:12:55.169+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:12:55.170+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:12:55.170+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:12:55.170+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:12:55.171+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:12:55.171+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:12:55.171+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:12:55.171+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:12:55.172+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:12:55.172+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:12:55.173+0300 [              engine] world open
+[I] 2026/10/20 20:12:55.173+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:12:55.174+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:12:55.176+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:12:55.192+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:12:55.193+0300 [       chunks-render] memory consumption is 49958840 B
+[I] 2026/10/20 20:12:55.389+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:12:55.389+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:12:55.390+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:12:55.390+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:12:55.390+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:12:55.391+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:12:55.396+0300 [      world-renderer] recompiling shaders due to settings change
+[I] 2026/10/20 20:14:12.189+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:14:12.243+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:14:12.263+0300 [              engine] world closed
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:14:12.265+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:14:12.269+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:14:12.270+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:14:12.270+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:14:12.270+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:14:12.271+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:14:12.290+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:14:12.291+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:14:12.294+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:14:12.466+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:14:12.466+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:14:12.466+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:14:12.467+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:14:12.469+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:14:12.470+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:14:12.471+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:14:12.472+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:14:12.473+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:14:12.474+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:14:12.475+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:14:12.476+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:14:12.477+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:14:12.478+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:14:12.479+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:14:12.480+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:14:12.480+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:14:12.481+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:14:12.481+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:14:12.482+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:14:12.482+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:14:12.482+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:14:12.483+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:14:12.483+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:14:12.483+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:14:12.484+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:14:12.490+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:14:12.491+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:14:12.491+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:14:12.491+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:14:12.492+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:14:12.492+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:14:12.492+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:14:12.493+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:14:12.493+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:14:12.493+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:14:12.494+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:14:12.494+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:14:12.494+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:14:12.495+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:14:12.495+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:14:12.495+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:14:12.496+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:14:13.023+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:14:13.459+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:14:13.467+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:14:13.477+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:14:13.478+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:14:13.478+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:14:13.479+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:14:13.479+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:14:13.502+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:14:13.511+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:14:13.511+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:14:13.511+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:14:13.512+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:14:13.513+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:14:13.515+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:14:13.515+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:14:13.516+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:14:13.516+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:14:13.516+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:14:13.517+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:14:13.517+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:14:13.517+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:14:13.518+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:14:13.518+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:14:13.519+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:14:13.520+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:14:13.520+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:14:13.520+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:14:13.520+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:14:13.522+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:14:13.544+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:14:13.545+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:14:13.548+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:14:13.760+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:14:13.760+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:14:13.760+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:14:13.761+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:14:13.763+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:14:13.764+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:14:13.765+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:14:13.766+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:14:13.768+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:14:13.769+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:14:13.770+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:14:13.771+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:14:13.772+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:14:13.773+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:14:13.774+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:14:13.775+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:14:13.776+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:14:13.776+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:14:13.777+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:14:13.777+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:14:13.778+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:14:13.778+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:14:13.779+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:14:13.779+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:14:13.780+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:14:13.780+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:14:13.785+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:14:13.786+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:14:13.786+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:14:13.787+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:14:13.787+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:14:13.788+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:14:13.788+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:14:13.788+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:14:13.789+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:14:13.789+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:14:13.790+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:14:13.790+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:14:13.790+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:14:13.791+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:14:13.791+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:14:13.792+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:14:13.792+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:14:13.792+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:14:13.793+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:14:13.793+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:14:13.793+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:14:13.795+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:14:13.797+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:14:13.799+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:14:13.815+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:14:13.839+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:14:13.842+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:14:13.844+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:14:13.847+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:14:13.848+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:14:13.853+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:14:13.855+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:14:13.858+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:14:13.859+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:14:13.863+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:14:13.865+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:14:13.868+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:14:13.869+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:14:13.876+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:14:13.878+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:14:13.880+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:14:13.884+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:14:13.887+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:14:13.888+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:14:13.893+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:14:13.895+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:14:13.899+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:14:13.905+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:14:13.909+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:14:13.910+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:14:13.915+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:14:13.917+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:14:13.918+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:14:13.922+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:14:13.924+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:14:13.926+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:14:13.926+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:14:13.926+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:14:13.926+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:14:13.927+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:14:13.928+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:14:13.928+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:14:13.928+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:14:13.929+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:14:13.929+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:14:13.929+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:14:13.929+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:14:13.930+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:14:13.930+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:14:13.930+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:14:13.930+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:14:13.930+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:14:13.931+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:14:13.931+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:14:13.931+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:14:13.932+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:14:13.932+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:14:13.933+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:14:13.933+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:14:13.934+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:14:13.934+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:14:13.935+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:14:13.935+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:14:13.935+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:14:13.936+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:14:13.936+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:14:13.937+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:14:13.937+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:14:13.937+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:14:13.937+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:14:13.938+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:14:13.938+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:14:13.939+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:14:13.939+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:14:13.939+0300 [              engine] world open
+[I] 2026/10/20 20:14:13.940+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:14:13.941+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:14:13.944+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:14:13.961+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:14:13.961+0300 [       chunks-render] memory consumption is 49958840 B
+[I] 2026/10/20 20:14:14.162+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:14:14.162+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:14:14.163+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:14:14.163+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:14:14.163+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:14:14.163+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:14:14.169+0300 [      world-renderer] recompiling shaders due to settings change
+[I] 2026/10/20 20:15:37.907+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:15:37.962+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:15:37.981+0300 [              engine] world closed
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:15:37.982+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:15:37.985+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:15:37.986+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:15:37.986+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:15:37.986+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:15:37.987+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:15:38.004+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:15:38.005+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:15:38.008+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:15:38.179+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:15:38.179+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:15:38.179+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:15:38.180+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:15:38.182+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:15:38.183+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:15:38.183+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:15:38.184+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:15:38.185+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:15:38.186+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:15:38.187+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:15:38.188+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:15:38.189+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:15:38.191+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:15:38.191+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:15:38.192+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:15:38.193+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:15:38.193+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:15:38.194+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:15:38.194+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:15:38.195+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:15:38.195+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:15:38.195+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:15:38.196+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:15:38.196+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:15:38.197+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:15:38.202+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:15:38.203+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:15:38.203+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:15:38.204+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:15:38.204+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:15:38.205+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:15:38.205+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:15:38.205+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:15:38.206+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:15:38.206+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:15:38.207+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:15:38.207+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:15:38.208+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:15:38.208+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:15:38.208+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:15:38.209+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:15:38.209+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:15:38.708+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:15:39.194+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:15:39.202+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:15:39.212+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:15:39.212+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:15:39.213+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:15:39.213+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:15:39.214+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:15:39.240+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:15:39.249+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:15:39.250+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:15:39.250+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:15:39.251+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:15:39.253+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:15:39.255+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:15:39.255+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:15:39.255+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:15:39.256+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:15:39.256+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:15:39.257+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:15:39.257+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:15:39.257+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:15:39.258+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:15:39.258+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:15:39.260+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:15:39.261+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:15:39.261+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:15:39.261+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:15:39.261+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:15:39.262+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:15:39.286+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:15:39.287+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:15:39.291+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:15:39.514+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:15:39.514+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:15:39.515+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:15:39.516+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:15:39.518+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:15:39.519+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:15:39.520+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:15:39.521+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:15:39.522+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:15:39.523+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:15:39.524+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:15:39.525+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:15:39.526+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:15:39.528+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:15:39.529+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:15:39.530+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:15:39.530+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:15:39.531+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:15:39.531+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:15:39.532+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:15:39.533+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:15:39.533+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:15:39.534+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:15:39.534+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:15:39.535+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:15:39.535+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:15:39.541+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:15:39.541+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:15:39.542+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:15:39.542+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:15:39.543+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:15:39.543+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:15:39.544+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:15:39.544+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:15:39.545+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:15:39.545+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:15:39.546+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:15:39.546+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:15:39.547+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:15:39.547+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:15:39.547+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:15:39.548+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:15:39.548+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:15:39.549+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:15:39.549+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:15:39.550+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:15:39.550+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:15:39.551+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:15:39.553+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:15:39.555+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:15:39.569+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:15:39.595+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:15:39.598+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:15:39.601+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:15:39.604+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:15:39.605+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:15:39.610+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:15:39.612+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:15:39.616+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:15:39.617+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:15:39.623+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:15:39.626+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:15:39.629+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:15:39.630+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:15:39.637+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:15:39.639+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:15:39.641+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:15:39.645+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:15:39.649+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:15:39.652+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:15:39.657+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:15:39.660+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:15:39.664+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:15:39.670+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:15:39.674+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:15:39.675+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:15:39.680+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:15:39.682+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:15:39.684+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:15:39.689+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:15:39.690+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:15:39.692+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:15:39.692+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:15:39.692+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:15:39.692+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:15:39.693+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:15:39.693+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:15:39.694+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:15:39.694+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:15:39.694+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:15:39.694+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:15:39.694+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:15:39.695+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:15:39.695+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:15:39.695+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:15:39.695+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:15:39.695+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:15:39.696+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:15:39.696+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:15:39.696+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:15:39.696+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:15:39.697+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:15:39.697+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:15:39.698+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:15:39.698+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:15:39.699+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:15:39.699+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:15:39.699+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:15:39.700+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:15:39.700+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:15:39.701+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:15:39.701+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:15:39.702+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:15:39.702+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:15:39.702+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:15:39.702+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:15:39.703+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:15:39.703+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:15:39.704+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:15:39.704+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:15:39.705+0300 [              engine] world open
+[I] 2026/10/20 20:15:39.705+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:15:39.706+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:15:39.709+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:15:39.725+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:15:39.726+0300 [       chunks-render] memory consumption is 49958840 B
+[I] 2026/10/20 20:15:39.930+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:15:39.930+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:15:39.930+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:15:39.931+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:15:39.931+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:15:39.931+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:15:39.936+0300 [      world-renderer] recompiling shaders due to settings change
+[I] 2026/10/20 20:15:57.908+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:15:57.964+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:15:57.985+0300 [              engine] world closed
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:15:57.987+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:15:57.991+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:15:57.991+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:15:57.992+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:15:57.992+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:15:57.992+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:15:58.013+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:15:58.014+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:15:58.017+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:15:58.188+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:15:58.188+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:15:58.188+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:15:58.189+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:15:58.191+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:15:58.192+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:15:58.192+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:15:58.193+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:15:58.194+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:15:58.195+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:15:58.196+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:15:58.197+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:15:58.198+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:15:58.199+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:15:58.200+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:15:58.201+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:15:58.201+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:15:58.202+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:15:58.202+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:15:58.202+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:15:58.203+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:15:58.203+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:15:58.204+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:15:58.204+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:15:58.204+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:15:58.205+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:15:58.210+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:15:58.210+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:15:58.211+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:15:58.211+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:15:58.212+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:15:58.212+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:15:58.212+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:15:58.213+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:15:58.213+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:15:58.213+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:15:58.214+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:15:58.214+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:15:58.215+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:15:58.215+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:15:58.215+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:15:58.216+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:15:58.216+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:15:58.742+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:15:59.261+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:15:59.269+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:15:59.279+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:15:59.280+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:15:59.280+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:15:59.281+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:15:59.281+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:15:59.307+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:15:59.315+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:15:59.316+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:15:59.316+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:15:59.317+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:15:59.318+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:15:59.320+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:15:59.320+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:15:59.320+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:15:59.321+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:15:59.321+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:15:59.321+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:15:59.322+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:15:59.322+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:15:59.322+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:15:59.322+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:15:59.324+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:15:59.324+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:15:59.325+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:15:59.325+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:15:59.325+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:15:59.326+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:15:59.349+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:15:59.349+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:15:59.352+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:15:59.559+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:15:59.560+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:15:59.560+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:15:59.561+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:15:59.563+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:15:59.564+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:15:59.565+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:15:59.566+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:15:59.567+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:15:59.569+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:15:59.570+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:15:59.571+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:15:59.572+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:15:59.574+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:15:59.575+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:15:59.576+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:15:59.576+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:15:59.577+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:15:59.577+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:15:59.578+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:15:59.578+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:15:59.579+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:15:59.579+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:15:59.580+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:15:59.580+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:15:59.581+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:15:59.587+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:15:59.588+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:15:59.588+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:15:59.589+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:15:59.589+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:15:59.590+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:15:59.590+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:15:59.591+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:15:59.591+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:15:59.591+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:15:59.592+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:15:59.592+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:15:59.593+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:15:59.593+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:15:59.593+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:15:59.594+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:15:59.594+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:15:59.595+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:15:59.595+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:15:59.595+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:15:59.595+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:15:59.597+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:15:59.598+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:15:59.600+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:15:59.615+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:15:59.641+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:15:59.645+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:15:59.647+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:15:59.651+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:15:59.651+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:15:59.657+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:15:59.659+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:15:59.662+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:15:59.664+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:15:59.668+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:15:59.671+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:15:59.673+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:15:59.675+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:15:59.682+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:15:59.684+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:15:59.686+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:15:59.691+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:15:59.694+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:15:59.696+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:15:59.701+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:15:59.703+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:15:59.708+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:15:59.715+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:15:59.719+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:15:59.720+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:15:59.726+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:15:59.728+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:15:59.730+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:15:59.735+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:15:59.737+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:15:59.738+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:15:59.739+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:15:59.739+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:15:59.739+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:15:59.739+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:15:59.740+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:15:59.740+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:15:59.740+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:15:59.741+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:15:59.741+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:15:59.741+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:15:59.741+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:15:59.741+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:15:59.742+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:15:59.742+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:15:59.742+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:15:59.742+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:15:59.742+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:15:59.742+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:15:59.743+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:15:59.743+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:15:59.744+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:15:59.744+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:15:59.744+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:15:59.745+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:15:59.745+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:15:59.745+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:15:59.746+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:15:59.746+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:15:59.747+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:15:59.747+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:15:59.748+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:15:59.748+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:15:59.748+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:15:59.748+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:15:59.748+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:15:59.748+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:15:59.749+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:15:59.750+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:15:59.750+0300 [              engine] world open
+[I] 2026/10/20 20:15:59.750+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:15:59.751+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:15:59.754+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:15:59.769+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:15:59.770+0300 [       chunks-render] memory consumption is 49958840 B
+[I] 2026/10/20 20:15:59.967+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:15:59.967+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:15:59.967+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:15:59.968+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:15:59.968+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:15:59.968+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:15:59.974+0300 [      world-renderer] recompiling shaders due to settings change
+[I] 2026/10/20 20:16:22.025+0300 [        level-screen] saving world preview
+[I] 2026/10/20 20:16:22.077+0300 [       level-control] writing world 'test1'
+[I] 2026/10/20 20:16:22.097+0300 [              engine] world closed
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] cleaning scripts cache
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] no non-reset packs
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] unloaded tfactory:modules/Vector3.lua
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] unloaded tfactory:modules/tFactory.lua
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] unloaded tfactory:modules/CellProccessor.lua
+[I] 2026/10/20 20:16:22.099+0300 [           lua-debug] unloaded base:modules/util.lua
+[I] 2026/10/20 20:16:22.103+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:16:22.103+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:16:22.103+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:16:22.104+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:16:22.104+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:16:22.122+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:16:22.123+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:16:22.126+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:16:22.294+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:16:22.294+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:16:22.294+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:16:22.295+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:16:22.297+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:16:22.298+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:16:22.299+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:16:22.300+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:16:22.301+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:16:22.302+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:16:22.303+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:16:22.304+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:16:22.305+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:16:22.306+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:16:22.307+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:16:22.308+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:16:22.308+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:16:22.309+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:16:22.309+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:16:22.310+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:16:22.310+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:16:22.310+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:16:22.311+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:16:22.311+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:16:22.311+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:16:22.312+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:16:22.316+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:16:22.317+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:16:22.317+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:16:22.317+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:16:22.318+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:16:22.318+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:16:22.318+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:16:22.319+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:16:22.319+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:16:22.319+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:16:22.320+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:16:22.320+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:16:22.320+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:16:22.321+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:16:22.321+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:16:22.321+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:16:22.322+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:16:22.843+0300 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
+[I] 2026/10/20 20:16:23.278+0300 [      content-loader] loading pack [core]
+[I] 2026/10/20 20:16:23.286+0300 [      content-loader] loading pack [base]
+[I] 2026/10/20 20:16:23.295+0300 [    generator-loader] fragment tree0 has size [6, 9, 8]
+[I] 2026/10/20 20:16:23.296+0300 [    generator-loader] fragment tree1 has size [7, 12, 9]
+[I] 2026/10/20 20:16:23.296+0300 [    generator-loader] fragment tree2 has size [7, 16, 6]
+[I] 2026/10/20 20:16:23.297+0300 [    generator-loader] fragment tower has size [8, 18, 8]
+[I] 2026/10/20 20:16:23.297+0300 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
+[I] 2026/10/20 20:16:23.325+0300 [      content-loader] loading pack [tfactory]
+[I] 2026/10/20 20:16:23.335+0300 [           scripting] script (block) user:content/tFactory/scripts/core_block.lua
+[I] 2026/10/20 20:16:23.335+0300 [           scripting] script (block) project:content/base/scripts/sand.lua
+[I] 2026/10/20 20:16:23.336+0300 [           scripting] script (block) project:content/base/scripts/grass_block.lua
+[I] 2026/10/20 20:16:23.337+0300 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
+[I] 2026/10/20 20:16:23.338+0300 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
+[I] 2026/10/20 20:16:23.340+0300 [           scripting] script (world) user:content/tFactory/scripts/world.lua
+[I] 2026/10/20 20:16:23.341+0300 [           scripting] script (world) project:content/base/scripts/world.lua
+[I] 2026/10/20 20:16:23.341+0300 [           scripting] script (component) project:content/base/scripts/components/drop.lua
+[I] 2026/10/20 20:16:23.342+0300 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
+[I] 2026/10/20 20:16:23.342+0300 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
+[I] 2026/10/20 20:16:23.342+0300 [           scripting] script (world) res:scripts/world.lua
+[I] 2026/10/20 20:16:23.343+0300 [           scripting] script (component) res:scripts/components/animator.lua
+[I] 2026/10/20 20:16:23.343+0300 [           scripting] script (component) res:scripts/components/mob.lua
+[I] 2026/10/20 20:16:23.343+0300 [           scripting] script (component) res:scripts/components/pathfinding.lua
+[I] 2026/10/20 20:16:23.344+0300 [           scripting] script (component) res:scripts/components/player.lua
+[I] 2026/10/20 20:16:23.345+0300 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2026/10/20 20:16:23.346+0300 [              engine] loading bindings: res:config/bindings.toml
+[I] 2026/10/20 20:16:23.346+0300 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2026/10/20 20:16:23.346+0300 [              engine] loading bindings: user:content/tFactory/config/bindings.toml
+[I] 2026/10/20 20:16:23.346+0300 [   assets-management] loading assets
+[I] 2026/10/20 20:16:23.348+0300 [       assets-loader] loading textures/blocks as blocks
+[I] 2026/10/20 20:16:23.373+0300 [       assets-loader] loading textures/items as items
+[I] 2026/10/20 20:16:23.374+0300 [       assets-loader] loading textures/particles as particles
+[I] 2026/10/20 20:16:23.378+0300 [       assets-loader] loading fonts/font as normal
+[I] 2026/10/20 20:16:23.589+0300 [       assets-loader] loading models/block as block
+[I] 2026/10/20 20:16:23.589+0300 [     assetload-funcs] store model "block" as "block"
+[I] 2026/10/20 20:16:23.589+0300 [       assets-loader] loading shaders/effects/default as default
+[I] 2026/10/20 20:16:23.591+0300 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2026/10/20 20:16:23.593+0300 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2026/10/20 20:16:23.594+0300 [       assets-loader] loading shaders/ui as ui
+[I] 2026/10/20 20:16:23.595+0300 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2026/10/20 20:16:23.596+0300 [       assets-loader] loading shaders/main as main
+[I] 2026/10/20 20:16:23.597+0300 [       assets-loader] loading shaders/lines as lines
+[I] 2026/10/20 20:16:23.598+0300 [       assets-loader] loading shaders/entity as entity
+[I] 2026/10/20 20:16:23.599+0300 [       assets-loader] loading shaders/translucent as translucent
+[I] 2026/10/20 20:16:23.601+0300 [       assets-loader] loading shaders/background as background
+[I] 2026/10/20 20:16:23.602+0300 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2026/10/20 20:16:23.603+0300 [       assets-loader] loading shaders/shadows as shadows
+[I] 2026/10/20 20:16:23.604+0300 [       assets-loader] loading shaders/clouds as clouds
+[I] 2026/10/20 20:16:23.605+0300 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2026/10/20 20:16:23.606+0300 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2026/10/20 20:16:23.606+0300 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2026/10/20 20:16:23.607+0300 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2026/10/20 20:16:23.607+0300 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2026/10/20 20:16:23.608+0300 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2026/10/20 20:16:23.609+0300 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2026/10/20 20:16:23.610+0300 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2026/10/20 20:16:23.610+0300 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2026/10/20 20:16:23.610+0300 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2026/10/20 20:16:23.611+0300 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2026/10/20 20:16:23.616+0300 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2026/10/20 20:16:23.616+0300 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2026/10/20 20:16:23.617+0300 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2026/10/20 20:16:23.617+0300 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2026/10/20 20:16:23.618+0300 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2026/10/20 20:16:23.618+0300 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2026/10/20 20:16:23.618+0300 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2026/10/20 20:16:23.619+0300 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2026/10/20 20:16:23.619+0300 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2026/10/20 20:16:23.619+0300 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2026/10/20 20:16:23.620+0300 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2026/10/20 20:16:23.620+0300 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2026/10/20 20:16:23.621+0300 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2026/10/20 20:16:23.621+0300 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2026/10/20 20:16:23.622+0300 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2026/10/20 20:16:23.622+0300 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2026/10/20 20:16:23.623+0300 [       assets-loader] loading textures/misc/blank as 
+[I] 2026/10/20 20:16:23.623+0300 [       assets-loader] loading textures/cracks as cracks
+[I] 2026/10/20 20:16:23.624+0300 [       assets-loader] loading models/drop-item as drop-item
+[I] 2026/10/20 20:16:23.624+0300 [     assetload-funcs] store model "drop-item" as "drop-item"
+[I] 2026/10/20 20:16:23.624+0300 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
+[I] 2026/10/20 20:16:23.626+0300 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
+[I] 2026/10/20 20:16:23.628+0300 [       assets-loader] loading sounds/events/pickup as events/pickup
+[I] 2026/10/20 20:16:23.629+0300 [       assets-loader] loading sounds/ambient/rain as ambient/rain
+[I] 2026/10/20 20:16:23.644+0300 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
+[I] 2026/10/20 20:16:23.669+0300 [       assets-loader] loading textures/misc/moon as misc/moon
+[I] 2026/10/20 20:16:23.672+0300 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
+[I] 2026/10/20 20:16:23.674+0300 [       assets-loader] loading textures/misc/sun as misc/sun
+[I] 2026/10/20 20:16:23.677+0300 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
+[I] 2026/10/20 20:16:23.677+0300 [       assets-loader] loading sounds/steps/stone as steps/stone
+[I] 2026/10/20 20:16:23.682+0300 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
+[I] 2026/10/20 20:16:23.683+0300 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
+[I] 2026/10/20 20:16:23.686+0300 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
+[I] 2026/10/20 20:16:23.687+0300 [       assets-loader] loading sounds/steps/wood as steps/wood
+[I] 2026/10/20 20:16:23.691+0300 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
+[I] 2026/10/20 20:16:23.693+0300 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
+[I] 2026/10/20 20:16:23.695+0300 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
+[I] 2026/10/20 20:16:23.697+0300 [       assets-loader] loading sounds/steps/snow as steps/snow
+[I] 2026/10/20 20:16:23.704+0300 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
+[I] 2026/10/20 20:16:23.706+0300 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
+[I] 2026/10/20 20:16:23.708+0300 [       assets-loader] loading sounds/steps/sand as steps/sand
+[I] 2026/10/20 20:16:23.712+0300 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
+[I] 2026/10/20 20:16:23.715+0300 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
+[I] 2026/10/20 20:16:23.716+0300 [       assets-loader] loading sounds/steps/ground as steps/ground
+[I] 2026/10/20 20:16:23.722+0300 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
+[I] 2026/10/20 20:16:23.724+0300 [       assets-loader] loading sounds/steps/grass as steps/grass
+[I] 2026/10/20 20:16:23.729+0300 [       assets-loader] loading sounds/steps/metal as steps/metal
+[I] 2026/10/20 20:16:23.736+0300 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
+[I] 2026/10/20 20:16:23.740+0300 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
+[I] 2026/10/20 20:16:23.742+0300 [       assets-loader] loading sounds/steps/glass as steps/glass
+[I] 2026/10/20 20:16:23.747+0300 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
+[I] 2026/10/20 20:16:23.749+0300 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
+[I] 2026/10/20 20:16:23.750+0300 [       assets-loader] loading sounds/steps/carpet as steps/carpet
+[I] 2026/10/20 20:16:23.755+0300 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
+[I] 2026/10/20 20:16:23.756+0300 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
+[I] 2026/10/20 20:16:23.757+0300 [       assets-loader] loading user:content/tFactory/layouts/core.xml as tfactory:core
+[I] 2026/10/20 20:16:23.758+0300 [           scripting] script (layout) user:content/tFactory/layouts/core.xml.lua
+[E] 2026/10/20 20:16:23.758+0300 [                 lua] [string "core:modules/internal/debugging.lua"]:149: script 'modules/kompot.lua' not found in 'kompot'
+stack traceback:
+	[C]: in function '__error'
+	[string "core:modules/internal/debugging.lua"]:149: in function 'error'
+	[string "core:scripts/stdmin.lua"]:257: in function 'require'
+	[string "tfactory:layouts/core.xml.lua"]:1: in main chunk
+	[C]: in function 'open_world'
+	[string "[string]"]:1: in main chunk
+[I] 2026/10/20 20:16:23.758+0300 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
+[I] 2026/10/20 20:16:23.758+0300 [           scripting] script (layout) res:layouts/code_editor.xml.lua
+[I] 2026/10/20 20:16:23.759+0300 [       assets-loader] loading res:layouts/console.xml as core:console
+[I] 2026/10/20 20:16:23.759+0300 [           scripting] script (layout) res:layouts/console.xml.lua
+[I] 2026/10/20 20:16:23.759+0300 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
+[I] 2026/10/20 20:16:23.759+0300 [           scripting] script (layout) res:layouts/files_panel.xml.lua
+[I] 2026/10/20 20:16:23.760+0300 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
+[I] 2026/10/20 20:16:23.760+0300 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
+[I] 2026/10/20 20:16:23.760+0300 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
+[I] 2026/10/20 20:16:23.760+0300 [           scripting] script (layout) res:layouts/inventory.xml.lua
+[I] 2026/10/20 20:16:23.760+0300 [       assets-loader] loading res:layouts/process.xml as core:process
+[I] 2026/10/20 20:16:23.761+0300 [           scripting] script (layout) res:layouts/process.xml.lua
+[I] 2026/10/20 20:16:23.761+0300 [       assets-loader] loading base:skeletons/block as base:block
+[I] 2026/10/20 20:16:23.761+0300 [       assets-loader] loading base:skeletons/drop as base:drop
+[I] 2026/10/20 20:16:23.761+0300 [       assets-loader] loading base:skeletons/hand as base:hand
+[I] 2026/10/20 20:16:23.761+0300 [       assets-loader] loading base:skeletons/player as base:player
+[I] 2026/10/20 20:16:23.762+0300 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
+[I] 2026/10/20 20:16:23.762+0300 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
+[I] 2026/10/20 20:16:23.762+0300 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
+[I] 2026/10/20 20:16:23.763+0300 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
+[I] 2026/10/20 20:16:23.763+0300 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
+[I] 2026/10/20 20:16:23.764+0300 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
+[I] 2026/10/20 20:16:23.764+0300 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
+[I] 2026/10/20 20:16:23.765+0300 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
+[I] 2026/10/20 20:16:23.765+0300 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
+[I] 2026/10/20 20:16:23.766+0300 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
+[I] 2026/10/20 20:16:23.766+0300 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
+[I] 2026/10/20 20:16:23.767+0300 [       assets-loader] loading models/drop-block as drop-block
+[I] 2026/10/20 20:16:23.767+0300 [     assetload-funcs] store model "drop-block" as "drop-block"
+[I] 2026/10/20 20:16:23.767+0300 [       assets-loader] loading models/player-body as player-body
+[I] 2026/10/20 20:16:23.768+0300 [     assetload-funcs] store model "player-body" as "player-body"
+[I] 2026/10/20 20:16:23.768+0300 [       assets-loader] loading models/player-head as player-head
+[I] 2026/10/20 20:16:23.768+0300 [     assetload-funcs] store model "player-head" as "player-head"
+[I] 2026/10/20 20:16:23.768+0300 [       assets-loader] loading textures/entities/player as entities/player
+[I] 2026/10/20 20:16:23.769+0300 [               world] loading world test1 (user:worlds/test1)
+[I] 2026/10/20 20:16:23.769+0300 [               world] world version: 0.32 seed: 79420629243124 environment: 
+[I] 2026/10/20 20:16:23.770+0300 [              engine] world open
+[I] 2026/10/20 20:16:23.770+0300 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
+[I] 2026/10/20 20:16:23.771+0300 [     world-generator] total number of prototype levels is 11
+[I] 2026/10/20 20:16:23.774+0300 [   content-gfx-cache] uv cache size is 98304 B
+[I] 2026/10/20 20:16:23.790+0300 [       chunks-render] created 6 workers
+[I] 2026/10/20 20:16:23.790+0300 [       chunks-render] memory consumption is 50573280 B
+[I] 2026/10/20 20:16:23.984+0300 [        level-screen] initializing pack 'tfactory'
+[I] 2026/10/20 20:16:23.984+0300 [        level-screen] initializing pack 'base'
+[I] 2026/10/20 20:16:23.985+0300 [       scripting-hud] loading script project:content/base/scripts/hud.lua
+[I] 2026/10/20 20:16:23.985+0300 [        level-screen] initializing pack 'core'
+[I] 2026/10/20 20:16:23.985+0300 [       scripting-hud] loading script res:scripts/hud.lua
+[I] 2026/10/20 20:16:23.985+0300 [       scripting-hud] loading script res:scripts/hud_classes.lua
+[I] 2026/10/20 20:16:23.991+0300 [      world-renderer] recompiling shaders due to settings change

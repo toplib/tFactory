@@ -1,0 +1,9 @@
+{
+  "entities": [],
+  "items": [],
+  "blocks": [
+    "conveyor_belt",
+    "core_block",
+    "electricity_delivery"
+  ]
+}

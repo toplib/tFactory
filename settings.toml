@@ -10,7 +10,7 @@ input-device = ""
 acoustic-effects = true
 
 [display]
-width = 950
+width = 1908
 height = 1023
 samples = 0
 framerate = -1
@@ -43,11 +43,11 @@ chunk-max-vertices-dense = 800000
 chunk-max-renderers = 6
 particles-batch-vertices = 4096
 advanced-render = true
-ssao = 2
-shadows-quality = 3
+ssao = 1
+shadows-quality = 0
 dense-render-distance = 56
 soft-lighting = true
-clouds-quality = 2
+clouds-quality = 1
 
 [ui]
 language = "en_US"

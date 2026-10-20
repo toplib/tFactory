@@ -5,6 +5,31 @@ local Vector3 = require("Vector3")
 CellProccessor.cells = {}
 
 --[[
+Example:
+{
+  from = {
+      x = -150,
+      y = 25,
+      z = 150,
+  },
+  to = {
+      x = 150,
+      y = -25,
+      z = -150,
+  },
+}
+]]
+
+CellProccessor.updatingRegions = {}
+
+--[[
+Example:
+from x:-150y:25z:75 to x:-150y:25z:70 same update
+]]
+
+CellProccessor.inTimeUpdating = {}
+
+--[[
 cell
 {
   string positionVec3,

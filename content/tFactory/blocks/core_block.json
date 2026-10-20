@@ -1,0 +1,5 @@
+{
+  "texture": "core-block",
+  "emission": [9, 10, 11],
+  "base:durability": 10.5
+}

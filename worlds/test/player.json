@@ -3,14 +3,14 @@
     {
       "camera": "core:first-person",
       "position": [
-        7.30890989303589,
-        91.7044219970703,
-        18.3676090240479
+        -12.5889043807983,
+        70.8999633789062,
+        36.7967338562012
       ],
       "entity": 1,
       "rotation": [
-        82.3311538696289,
-        -59.9281158447266,
+        -134.961563110352,
+        -20.6107749938965,
         0
       ],
       "id": 0,
@@ -22,15 +22,16 @@
       "interaction-distance": 10,
       "infinite-items": true,
       "name": "",
-      "chosen-slot": 0,
-      "noclip": true,
-      "flight": true,
+      "chosen-slot": 1,
+      "noclip": false,
+      "flight": false,
       "suspended": false,
       "instant-destruction": true,
       "inventory": {
         "slots": [
           {
-            "id": 0
+            "count": 1,
+            "id": 30
           },
           {
             "id": 0
