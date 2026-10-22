@@ -1,4 +1,14 @@
 {
-  "texture": "conveyor-belt",
-  "base:durability": 10.5
+  "base:durability": 10.5,
+  "model": "aabb",
+  "hitbox": [0.0, 0.0, 0.0, 1.0, 0.5, 1.0],
+  "texture-faces": [
+    "conveyor-belt-side",
+    "conveyor-belt-side",
+    "conveyor-belt",
+    "conveyor-belt",
+    "conveyor-belt",
+    "conveyor-belt",
+  ],
+  "rotation": "pane"
 }

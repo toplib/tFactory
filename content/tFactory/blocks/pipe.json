@@ -1,0 +1,16 @@
+{
+  "model": "aabb",
+  "hitbox": [0.25, 0.0, 0.25, 0.5, 1.0, 0.5],
+  "texture-faces": [
+    "pipe-metal",
+    "pipe-metal",
+    "pipe-metal-corner",
+    "pipe-metal-corner",
+    "pipe-metal",
+    "pipe-metal",
+  ],
+  "rotation": "pipe",
+  "light-passing": true,
+  "material": "base:metal",
+  "base:durability": 4.7
+}

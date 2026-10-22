@@ -2,7 +2,8 @@
   "entities": [
     "base:drop",
     "base:player",
-    "base:falling_block"
+    "base:falling_block",
+    "tfactory:test001"
   ],
   "blocks-data": {},
   "blocks": [
@@ -37,7 +38,12 @@
     "base:ice",
     "tfactory:conveyor_belt",
     "tfactory:core_block",
-    "tfactory:electricity_delivery"
+    "tfactory:electricity_delivery",
+    "tfactory:science_block",
+    "tfactory:assembly",
+    "tfactory:extractor",
+    "tfactory:controller",
+    "tfactory:pipe"
   ],
   "items": [
     "core:empty",
@@ -72,7 +78,12 @@
     "base:bazalt_breaker",
     "tfactory:conveyor_belt.item",
     "tfactory:core_block.item",
-    "tfactory:electricity_delivery.item"
+    "tfactory:electricity_delivery.item",
+    "tfactory:science_block.item",
+    "tfactory:assembly.item",
+    "tfactory:extractor.item",
+    "tfactory:controller.item",
+    "tfactory:pipe.item"
   ],
   "region-version": 3
 }

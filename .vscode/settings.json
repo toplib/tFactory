@@ -1,0 +1,9 @@
+{
+    "Lua.runtime.plugin": [
+        "/home/toplib/.config/Code/User/globalStorage/booleanfalse.kompot-lens/resolvers/1a212510a35a1440/kompot.lua"
+    ],
+    "Lua.workspace.library": [
+        "/media/games/ultramegafactoryvoxelcore99999/content/kompot/annotations",
+        "/home/toplib/.vscode/extensions/booleanfalse.kompot-lens-0.14.0/luals/kompot/library/modules"
+    ]
+}

@@ -1,9 +1,16 @@
 {
-  "entities": [],
+  "entities": [
+    "test001"
+  ],
   "items": [],
   "blocks": [
     "conveyor_belt",
     "core_block",
-    "electricity_delivery"
+    "electricity_delivery",
+    "science_block",
+    "assembly",
+    "extractor",
+    "controller",
+    "pipe"
   ]
 }

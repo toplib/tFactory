@@ -10,7 +10,7 @@ input-device = ""
 acoustic-effects = true
 
 [display]
-width = 1908
+width = 950
 height = 1023
 samples = 0
 framerate = -1

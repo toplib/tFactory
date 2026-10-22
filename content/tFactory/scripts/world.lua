@@ -1,3 +1,5 @@
+require("Commands")
+
 function on_world_open()
 	local tFactory = require("tFactory")
 
