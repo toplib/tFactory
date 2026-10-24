@@ -3,12 +3,12 @@
   "seed": 79420629243124,
   "time": {
     "day-time-speed": 1,
-    "total-time": 6737.46211674419,
-    "day-time": 0.462453871965408
+    "total-time": 6902.97023097186,
+    "day-time": 0.577389240264893
   },
   "generator": "base:demo",
-  "next-entity-id": 26,
-  "next-inventory-id": 106,
+  "next-entity-id": 27,
+  "next-inventory-id": 126,
   "name": "test1",
   "version": {
     "minor": 32,

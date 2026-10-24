@@ -1,6 +1,7 @@
 local CellProccessor = {}
 
 local Vector3 = require("Vector3")
+local Debug = require("Debug")
 
 CellProccessor.cells = {}
 
@@ -29,31 +30,52 @@ from x:-150y:25z:75 to x:-150y:25z:70 same update
 
 CellProccessor.inTimeUpdating = {}
 
+CellProccessor.dirtyCells = {}
+
 --[[
 cell
 {
   string positionVec3,
   string rotationVec3,
   string value,
+  int radius,
+  int health,
+  string class,
+  function condition(radiusBlock),
+  function onSuccessful(successBlock),
+  function work(callbackFunction, data),
+  function put(item),
+  function get(),
+  table candidatesList,
+  bool dirty,
 }
 ]]
 
+--[[
+query
+{
+  string type,
+  table parameters
+}
+]]
 function CellProccessor.loadIntialState(cells)
-	print("Initializing initial state")
+	Debug.log("INFO", "CellProccessor", "Initializing initial state")
 	for _, cell in ipairs(cells) do
 		CellProccessor.cells[cell.position] = {
 			value = cell.value,
 			rotation = cell.rotation,
 		}
-		print("Done cell with position: " .. cell.position)
+		Debug.log("INFO", "CellProccessor", "Done cell with position: " .. cell.position)
 	end
-	print("Done!")
+	Debug.log("INFO", "CellProccessor", "Done!")
 end
 
 function CellProccessor.updateCell(cell)
 	local existing = CellProccessor.cells[cell.position]
 	if existing then
-		print(
+		Debug.log(
+			"INFO",
+			"CellProccessor",
 			'Replacing: "'
 				.. existing.value
 				.. '", to: "'
@@ -71,7 +93,11 @@ function CellProccessor.updateCell(cell)
 end
 
 function CellProccessor.step()
-	print("Step...")
+	Debug.log("BT", "CellProccessor", "Step...")
+
+	for dirtyCell in ipairs(CellProccessor.dirtyCells) do
+		-- Test
+	end
 end
 
 return CellProccessor

@@ -5,6 +5,8 @@ local GameStorage = require("GameStorage")
 local Item = require("Item")
 local Events = require("Events")
 local Settings = require("Settings")
+local CommandsFactory = require("CommandsFactory")
+local Debug = require("Debug")
 
 function tFactory.registerEvents()
 	Events.registerEvent(function(arguments)
@@ -23,21 +25,19 @@ function tFactory.loadSave()
 end
 
 function tFactory.start()
-	print("----------------------------------------------")
-	print("              Starting tFactory               ")
-	print("----------------------------------------------")
+	Debug.log("INFO", "tFactory", "Starting tFactory")
 
-	print("----------------------------------------------")
-	print("             Registering Events               ")
-	print("----------------------------------------------")
+	Debug.log("INFO", "tFactory", "Registering Events")
 	tFactory.registerEvents()
-	print('Done "registerEvents"!')
-	print("----------------------------------------------")
-	print("                Loading save                  ")
-	print("----------------------------------------------")
-	-- tFactory.loadSave()
-	print('Done "loadSave"!')
 
+	Debug.log("INFO", "tFactory", 'Done "registerEvents"!')
+	Debug.log("INFO", "tFactory", "Loading save")
+	-- tFactory.loadSave()
+	Debug.log("INFO", "tFactory", 'Done "loadSave"!')
+
+	Debug.log("INFO", "tFactory", "Register commands")
+	CommandsFactory.registerCommands()
+	Debug.log("INFO", "tFactory", 'Done "registerCommands"!')
 	local cells = {
 		{
 			position = "x:0y:0z:0",

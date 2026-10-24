@@ -3,14 +3,14 @@
     {
       "camera": "core:first-person",
       "position": [
-        -6.84389686584473,
-        76.0494689941406,
-        47.2418670654297
+        -0.882547736167908,
+        83.1037750244141,
+        60.5265235900879
       ],
       "entity": 1,
       "rotation": [
-        142.489242553711,
-        11.9816522598267,
+        -7.95831394195557,
+        3.52294921875,
         0
       ],
       "id": 0,
@@ -22,7 +22,7 @@
       "interaction-distance": 10,
       "infinite-items": true,
       "name": "",
-      "chosen-slot": 9,
+      "chosen-slot": 3,
       "noclip": true,
       "flight": true,
       "suspended": false,

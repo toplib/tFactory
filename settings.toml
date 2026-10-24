@@ -10,10 +10,10 @@ input-device = ""
 acoustic-effects = true
 
 [display]
-width = 950
-height = 1023
+width = 1354
+height = 718
 samples = 0
-framerate = -1
+framerate = 0
 limit-fps-iconified = false
 window-mode = 0
 adaptive-menu-fps = false
@@ -26,15 +26,15 @@ shaking = true
 inertia = true
 
 [chunks]
-load-distance = 22
-load-speed = 4
+load-distance = 3
+load-speed = 1
 padding = 2
 
 [graphics]
-enable-fog = true
+enable-fog = false
 fog-curve = 1
-backlight = true
-dense-render = true
+backlight = false
+dense-render = false
 gamma = 1
 frustum-culling = true
 skybox-resolution = 96
@@ -42,12 +42,12 @@ chunk-max-vertices = 200000
 chunk-max-vertices-dense = 800000
 chunk-max-renderers = 6
 particles-batch-vertices = 4096
-advanced-render = true
-ssao = 1
+advanced-render = false
+ssao = 0
 shadows-quality = 0
 dense-render-distance = 56
-soft-lighting = true
-clouds-quality = 1
+soft-lighting = false
+clouds-quality = 0
 
 [ui]
 language = "en_US"
