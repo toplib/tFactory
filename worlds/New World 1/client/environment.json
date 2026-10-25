@@ -1,0 +1,74 @@
+{
+  "weather": {
+    "speed": 0,
+    "name-b": "",
+    "name-a": "",
+    "t": 1,
+    "b": {
+      "thunder_rate": 0,
+      "clouds": 0,
+      "min_sky_light": [
+        0.200000002980232,
+        0.25,
+        0.330000013113022
+      ],
+      "clouds_tint": [
+        1,
+        1,
+        1
+      ],
+      "sky_tint": [
+        1,
+        1,
+        1
+      ],
+      "fog_curve": 1,
+      "fog_dencity": 1,
+      "fog_opacity": 0,
+      "fall": {
+        "opaque": false,
+        "max_intensity": 1,
+        "min_opacity": 0,
+        "noise": "",
+        "scale": 0.100000001490116,
+        "hspeed": 0.100000001490116,
+        "max_opacity": 1,
+        "vspeed": 1,
+        "texture": ""
+      }
+    },
+    "a": {
+      "thunder_rate": 0,
+      "clouds": 0,
+      "min_sky_light": [
+        0.200000002980232,
+        0.25,
+        0.330000013113022
+      ],
+      "clouds_tint": [
+        1,
+        1,
+        1
+      ],
+      "sky_tint": [
+        1,
+        1,
+        1
+      ],
+      "fog_curve": 1,
+      "fog_dencity": 1,
+      "fog_opacity": 0,
+      "fall": {
+        "opaque": false,
+        "max_intensity": 1,
+        "min_opacity": 0,
+        "noise": "",
+        "scale": 0.100000001490116,
+        "hspeed": 0.100000001490116,
+        "max_opacity": 1,
+        "vspeed": 1,
+        "texture": ""
+      }
+    }
+  }
+}

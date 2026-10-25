@@ -43,7 +43,11 @@
     "tfactory:assembly",
     "tfactory:extractor",
     "tfactory:controller",
-    "tfactory:pipe"
+    "tfactory:pipe",
+    "tfactory:dead_dirt",
+    "tfactory:dead_dirt_iron_ore",
+    "tfactory:dead_dirt_copper_ore",
+    "tfactory:nanotite_block"
   ],
   "items": [
     "core:empty",
@@ -83,7 +87,11 @@
     "tfactory:assembly.item",
     "tfactory:extractor.item",
     "tfactory:controller.item",
-    "tfactory:pipe.item"
+    "tfactory:pipe.item",
+    "tfactory:dead_dirt.item",
+    "tfactory:dead_dirt_iron_ore.item",
+    "tfactory:dead_dirt_copper_ore.item",
+    "tfactory:nanotite_block.item"
   ],
   "region-version": 3
 }

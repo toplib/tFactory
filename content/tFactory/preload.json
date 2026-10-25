@@ -1,0 +1,9 @@
+{
+  "textures": [
+    { "name": "tfactory_particles", "path": "textures/misc/particles" }
+  ],
+  "sounds": [
+    "music/guitar",
+    "music/regular"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "texture": "monster-egg",
+  "emission": [15, 1, 1],
+  "rotation": "pipe",
+  "base:durability": 21.5
+}

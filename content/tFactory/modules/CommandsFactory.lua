@@ -1,20 +1,48 @@
 local CommandsFactory = {}
 
-local function registerCommand(command, description, func)
-	print("[OK] Reach target add command " .. command)
-	console.add_command(command, description, func)
-end
-function CommandsFactory.registerCommands()
-	registerCommand("tfactory-ctl-debug-event-dispatcher", "DEBUG!!!", function(args)
-		if not world.is_open() then
-			return "world is not open"
-		end
-		hud.show_overlay("tfactory:dbg_event_dispatcher", true)
-	end)
+local Debug = require("Debug")
 
-	registerCommand("tfactory-ctl-debug-spawn-entity-test001", "DEBUG!!!", function(args)
-		local px, py, pz = player.get_pos(playerid)
-		entities.spawn("tfactory:test001", { px, py + 1.0, pz })
-	end)
+CommandsFactory.commands = {
+	{
+		id = "tfactory-ctl-debug-event-dispatcher",
+		class = "control",
+
+		name = "tFactory Control Debug Event Dispatcher",
+		description = "Debug!!",
+		func = function(args)
+			if not world.is_open() then
+				return "world is not open"
+			end
+			hud.show_overlay("tfactory:dbg_event_dispatcher", true)
+		end,
+		scheme = "tfactory-ctl-debug-event-dispatcher",
+		isCheat = true,
+	},
+	{
+		id = "tfactory-ctl-debug-entity-spawner",
+		class = "control",
+
+		name = "tFactory Control Debug Entity Spawner",
+		description = "Debug!!",
+		func = function(args)
+			if not world.is_open() then
+				return "world is not open"
+			end
+			hud.show_overlay("tfactory:dbg_entity_spawner", true)
+		end,
+		scheme = "tfactory-ctl-debug-entity-spawner",
+		isCheat = true,
+	},
+}
+
+function CommandsFactory.registerCommands()
+	for _, command in ipairs(CommandsFactory.commands) do
+		Debug.log(
+			"INFO",
+			"CommandsFactory",
+			"Reach target: Add command " .. command.name .. ", with id: " .. command.id
+		)
+		console.add_command(command.scheme, command.description, command.func, command.isCheat)
+	end
 end
 return CommandsFactory

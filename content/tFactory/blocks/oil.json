@@ -1,0 +1,12 @@
+{
+  "texture": "oil-texture",
+  "overlay-texture": "blocks:oil-texture",
+  "draw-group": 3,
+  "light-passing": true,
+  "sky-light-passing": false,
+  "obstacle": false,
+  "selectable": false,
+  "replaceable": true,
+  "translucent": true,
+  "tags": ["core:liquid"]
+}

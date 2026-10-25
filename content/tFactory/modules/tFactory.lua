@@ -1,12 +1,15 @@
 local tFactory = {}
 
-local CellProccessor = require("CellProccessor")
+local CellProcessor = require("CellProcessor")
 local GameStorage = require("GameStorage")
 local Item = require("Item")
 local Events = require("Events")
 local Settings = require("Settings")
 local CommandsFactory = require("CommandsFactory")
 local Debug = require("Debug")
+local EntityController = require("entity/EntityController")
+local AnimationController = require("animation/AnimationController")
+local SoundEngine = require("sound/SoundEngine")
 
 function tFactory.registerEvents()
 	Events.registerEvent(function(arguments)
@@ -38,6 +41,11 @@ function tFactory.start()
 	Debug.log("INFO", "tFactory", "Register commands")
 	CommandsFactory.registerCommands()
 	Debug.log("INFO", "tFactory", 'Done "registerCommands"!')
+
+	Debug.log("INFO", "tFactory", "Starting EntityController")
+	EntityController.EntityController()
+	Debug.log("INFO", "tFactory", 'Done "EntityController"!')
+
 	local cells = {
 		{
 			position = "x:0y:0z:0",
@@ -60,7 +68,7 @@ function tFactory.start()
 			value = "tfactory:furnance",
 		},
 	}
-	CellProccessor.loadIntialState(cells)
+	CellProcessor.loadIntialState(cells)
 
 	local cellToUpdateInCells = {
 		position = "x:0y:0z:0",
@@ -73,8 +81,26 @@ function tFactory.start()
 		value = "tfactory:not_null",
 	}
 
-	CellProccessor.updateCell(cellToUpdateInCells)
-	CellProccessor.updateCell(cellToUpdateNotInCells)
+	CellProcessor.updateCell(cellToUpdateInCells)
+	CellProcessor.updateCell(cellToUpdateNotInCells)
+end
+
+function tFactory.tick()
+	SoundEngine.tick()
+	CellProcessor.step()
+end
+
+function tFactory.onShutdown()
+	SoundEngine.onShutdown()
+end
+
+function tFactory.onBlockPlaced(blockid, x, y, z)
+	local dx, dy, dz = block.get_X(x, y, z)
+	CellProcessor.setCell(x, y, z, block.name(blockid), { x = dx, y = dy, z = dz })
+end
+
+function tFactory.onBlockBroken(blockid, x, y, z)
+	CellProcessor.removeCell(x, y, z)
 end
 
 -- GameStorage abstraction

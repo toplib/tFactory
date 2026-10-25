@@ -1,0 +1,7 @@
+{
+  "root": {
+    "name": "root",
+    "model": "ore",
+    "offset": [0.0, 0.0, 0.0]
+  }
+}

@@ -1,21 +1,11 @@
-local Events = require("Events")
-
-local OWNERSHIP_EVENT = "onConveyorItemOwnershipChange"
-
-local belts = {}
-
-local onOwnershipChange = function(arguments)
-	print("Done!")
-end
+local CellProcessor = require("CellProcessor")
+local ConveyorBelt = require("blocks/ConveyorBelt")
 
 function on_block_present(x, y, z)
-	belts[x .. ":" .. y .. ":" .. z] = true
-	Events.subscribe(OWNERSHIP_EVENT, onOwnershipChange)
+	local dx, dy, dz = block.get_X(x, y, z)
+	CellProcessor.setCell(x, y, z, block.name(block.get(x, y, z)), { x = dx, y = dy, z = dz })
 end
 
 function on_block_removed(x, y, z)
-	belts[x .. ":" .. y .. ":" .. z] = nil
-	if next(belts) == nil then
-		Events.unsubscribe(OWNERSHIP_EVENT, onOwnershipChange)
-	end
+	CellProcessor.removeCell(x, y, z)
 end

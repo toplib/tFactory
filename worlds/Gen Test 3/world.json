@@ -1,0 +1,17 @@
+{
+  "next-player-id": 1,
+  "seed": 46557738710902,
+  "time": {
+    "day-time-speed": 1,
+    "total-time": 790.753350731104,
+    "day-time": 0.497233361005783
+  },
+  "generator": "tfactory:wasteland",
+  "next-entity-id": 2,
+  "next-inventory-id": 37,
+  "name": "Gen Test 3",
+  "version": {
+    "minor": 32,
+    "major": 0
+  }
+}

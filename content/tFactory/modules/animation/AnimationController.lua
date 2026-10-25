@@ -1,0 +1,3 @@
+local AnimationController = {}
+
+return AnimationController

@@ -1,0 +1,6 @@
+{
+  "texture": "hell-guard-block",
+  "breakable": false,
+  "emission": [5, 12, 13],
+  "base:durability": 1e9
+}

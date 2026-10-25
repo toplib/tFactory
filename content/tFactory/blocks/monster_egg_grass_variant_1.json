@@ -1,0 +1,15 @@
+{
+    "caption": "Monster Egg Grass Variant 1",
+    "texture": "monster-egg-grass-variant-1",
+    "material": "base:grass",
+    "draw-group": 1,
+    "light-passing": true,
+    "obstacle": false,
+    "replaceable": true,
+    "grounded": true,
+    "model": "X",
+    "emission": [4, 1, 1],
+    "hitbox": [0.15, 0.0, 0.15, 0.7, 0.5, 0.7],
+    "base:durability": 0.0,
+    "base:loot": []
+}

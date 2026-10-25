@@ -1,0 +1,8 @@
+{
+  "hitbox": [1.0, 2.0, 1.0],
+  "body-type": "static",
+  "selectable": true,
+  "solid": true,
+  "skeleton-name": "tfactory:ore",
+  "components": []
+}

@@ -1,4 +1,5 @@
 {
+  "script-name": "extractor",
   "texture": "extractor",
   "emission": [9, 10, 11],
   "base:durability": 10.5

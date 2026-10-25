@@ -1,0 +1,23 @@
+[plains]
+parameters = [
+    {weight=0.8, value=0.5},
+    {weight=0.8, value=0.0}
+]
+layers = [
+    {below-sea-level=false, height=1, block="tfactory:dead_dirt"},
+    {height=-1, block="tfactory:dead_stone"},
+    {height=1, block="tfactory:hell_guard_block"}
+]
+sea-layers = [
+    {height=-1, block="tfactory:oil"}
+]
+plant-chance = 0.6
+plants = [
+    {weight=1, block="tfactory:dead_grass"},
+    {weight=0.95, block="tfactory:dead_grass_variant_1"},
+    {weight=0.90, block="tfactory:dead_grass_variant_2"},
+    {weight=0.85, block="tfactory:dead_grass_variant_3"},
+]
+structure-chance=0.0000
+structures = [
+]

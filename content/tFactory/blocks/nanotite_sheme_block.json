@@ -1,0 +1,5 @@
+{
+  "texture": "nanotite-scheme",
+  "emission": [1, 14, 1],
+  "base:durability": 32.8
+}

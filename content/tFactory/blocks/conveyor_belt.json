@@ -1,4 +1,5 @@
 {
+  "script-name": "conveyor_belt",
   "base:durability": 10.5,
   "model": "aabb",
   "hitbox": [0.0, 0.0, 0.0, 1.0, 0.5, 1.0],

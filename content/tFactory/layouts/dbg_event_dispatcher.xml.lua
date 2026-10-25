@@ -19,7 +19,6 @@ local Screen = K.component(function()
 				text = "Execute",
 				on_click = function()
 					Events.execute(event.value, {})
-					test.value = true
 				end,
 			})
 		end)

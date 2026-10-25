@@ -1,6 +1,7 @@
 {
   "entities": [
-    "test001"
+    "test001",
+    "ore"
   ],
   "items": [],
   "blocks": [
@@ -11,6 +12,22 @@
     "assembly",
     "extractor",
     "controller",
-    "pipe"
+    "pipe",
+    "dead_dirt",
+    "dead_dirt_iron_ore",
+    "dead_dirt_copper_ore",
+    "nanotite_block",
+    "nanotite_sheme_block",
+    "oil",
+    "dead_stone",
+    "hell_guard_block",
+    "monster_egg",
+    "monster_egg_small",
+    "monster_egg_grass",
+    "monster_egg_grass_variant_1",
+    "dead_grass",
+    "dead_grass_variant_1",
+    "dead_grass_variant_2",
+    "dead_grass_variant_3"
   ]
 }
