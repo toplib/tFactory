@@ -3,9 +3,9 @@ local CellProcessor = {}
 local Debug = require("Debug")
 local Serializer = require("serialization/Serializer")
 
-CellProcessor.templates = {} -- [class] = template
-CellProcessor.cells = {} -- [key] = cell
-CellProcessor.dirtyCells = {} -- [key] = cell
+CellProcessor.templates = {}   -- [class] = template
+CellProcessor.cells = {}       -- [key] = cell
+CellProcessor.dirtyCells = {}  -- [key] = cell
 CellProcessor.activeCells = {} -- [key] = cell
 
 local OFFSET = 2097152
@@ -14,12 +14,12 @@ local STEP = 1.0 / 20.0
 local tick = 0
 
 local neighbors = {
-	{ 1, 0, 0 },
-	{ -1, 0, 0 },
-	{ 0, 1, 0 },
-	{ 0, -1, 0 },
-	{ 0, 0, 1 },
-	{ 0, 0, -1 },
+	{ 1,  0,  0 },
+	{ -1, 0,  0 },
+	{ 0,  1,  0 },
+	{ 0,  -1, 0 },
+	{ 0,  0,  1 },
+	{ 0,  0,  -1 },
 }
 
 function CellProcessor.positionKey(x, y, z)
@@ -40,7 +40,8 @@ end
 
 local function markNeighborsDirty(x, y, z)
 	for i = 1, #neighbors do
-		CellProcessor.markDirty(x + neighbors[i][1], y + neighbors[i][2], z + neighbors[i][3])
+		CellProcessor.markDirty(x + neighbors[i][1], y + neighbors[i][2],
+			z + neighbors[i][3])
 	end
 end
 
@@ -54,16 +55,22 @@ end
 
 function CellProcessor.registerTemplate(template)
 	if template.class == nil then
-		Debug.log("WARN", "CellProcessor", "Cannot register template: class is nil!")
+		Debug.log(
+			"WARN",
+			"CellProcessor",
+			"Cannot register template: class is nil!"
+		)
 		return
 	end
 	if CellProcessor.templates[template.class] ~= nil then
-		Debug.log("WARN", "CellProcessor", 'Template "' .. template.class .. '", already registered!')
+		Debug.log("WARN", "CellProcessor",
+			'Template "' .. template.class .. '", already registered!')
 		return
 	end
 
 	CellProcessor.templates[template.class] = template
-	Debug.log("INFO", "CellProcessor", 'Registered template "' .. template.class .. '"')
+	Debug.log("INFO", "CellProcessor",
+		'Registered template "' .. template.class .. '"')
 end
 
 function CellProcessor.getCell(x, y, z)
@@ -112,7 +119,8 @@ function CellProcessor.setCell(x, y, z, class, rotation)
 		Debug.log(
 			"INFO",
 			"CellProcessor",
-			'Created cell "' .. class .. '" with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"'
+			'Created cell "' ..
+			class .. '" with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"'
 		)
 	elseif cell.class ~= class then
 		if cell.template.onRemoved ~= nil then
@@ -122,16 +130,16 @@ function CellProcessor.setCell(x, y, z, class, rotation)
 			"INFO",
 			"CellProcessor",
 			'Replacing: "'
-				.. cell.class
-				.. '", to: "'
-				.. class
-				.. '". With position: "x:'
-				.. x
-				.. "y:"
-				.. y
-				.. "z:"
-				.. z
-				.. '"'
+			.. cell.class
+			.. '", to: "'
+			.. class
+			.. '". With position: "x:'
+			.. x
+			.. "y:"
+			.. y
+			.. "z:"
+			.. z
+			.. '"'
 		)
 		cell.class = class
 		cell.template = template
@@ -169,7 +177,8 @@ function CellProcessor.removeCell(x, y, z)
 	CellProcessor.dirtyCells[key] = nil
 	CellProcessor.activeCells[key] = nil
 
-	Debug.log("INFO", "CellProcessor", 'Removed cell with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"')
+	Debug.log("INFO", "CellProcessor",
+		'Removed cell with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"')
 
 	markNeighborsDirty(x, y, z)
 end
@@ -179,7 +188,8 @@ function CellProcessor.pushItem(cell, item)
 		return false
 	end
 
-	local neighbor = CellProcessor.getCell(cell.x + cell.dx, cell.y + cell.dy, cell.z + cell.dz)
+	local neighbor = CellProcessor.getCell(cell.x + cell.dx, cell.y + cell.dy,
+		cell.z + cell.dz)
 	if neighbor == nil then
 		return false
 	end

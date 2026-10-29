@@ -10,6 +10,7 @@ local Debug = require("Debug")
 local EntityController = require("entity/EntityController")
 local AnimationController = require("animation/AnimationController")
 local SoundEngine = require("sound/SoundEngine")
+local Elements = require("elements/Elements")
 
 function tFactory.registerEvents()
 	Events.registerEvent(function(arguments)
@@ -45,6 +46,11 @@ function tFactory.start()
 	Debug.log("INFO", "tFactory", "Starting EntityController")
 	EntityController.EntityController()
 	Debug.log("INFO", "tFactory", 'Done "EntityController"!')
+
+
+	Debug.log("INFO", "tFactory", "Starting Elements Database")
+	Elements.Elements()
+	Debug.log("INFO", "tFactory", 'Done "Elements Database"!')
 
 	local cells = {
 		{
@@ -106,7 +112,10 @@ end
 -- GameStorage abstraction
 
 function tFactory.getCoreHealth()
-	return { health = GameStorage.core.health, max_health = GameStorage.core.max_health }
+	return {
+		health = GameStorage.core.health,
+		max_health = GameStorage.core.max_health
+	}
 end
 
 function tFactory.getCoreVault()
