@@ -1,0 +1,17 @@
+{
+  "next-player-id": 1,
+  "next-inventory-id": 4,
+  "generator": "base:demo",
+  "next-entity-id": 2,
+  "name": "sadsadsadsa",
+  "version": {
+    "minor": 32,
+    "major": 0
+  },
+  "time": {
+    "day-time-speed": 1,
+    "total-time": 88.9673636573716,
+    "day-time": 0.478446334600449
+  },
+  "seed": 79420629243124
+}

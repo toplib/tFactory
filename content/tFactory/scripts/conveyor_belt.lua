@@ -1,11 +1,16 @@
-local CellProcessor = require("CellProcessor")
-local ConveyorBelt = require("blocks/ConveyorBelt")
+local CellLifecycle = require("CellLifecycle")
+require("blocks/ConveyorBelt")
+
+local CLASS = "tfactory:conveyor_belt"
 
 function on_block_present(x, y, z)
-	local dx, dy, dz = block.get_X(x, y, z)
-	CellProcessor.setCell(x, y, z, block.name(block.get(x, y, z)), { x = dx, y = dy, z = dz })
+	CellLifecycle.present(x, y, z, CLASS)
 end
 
 function on_block_removed(x, y, z)
-	CellProcessor.removeCell(x, y, z)
+	CellLifecycle.removed(x, y, z, CLASS)
+end
+
+function on_replaced(x, y, z)
+	CellLifecycle.save(x, y, z, CLASS)
 end

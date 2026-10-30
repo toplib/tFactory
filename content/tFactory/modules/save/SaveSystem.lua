@@ -3,12 +3,20 @@ local SaveSystem = {}
 local Debug = require("Debug")
 
 function SaveSystem.load(filename)
-	Debug.log("INFO", "SaveSystem", "Loading save file: " .. filename)
-	return {}
+	if not file.isfile(filename) then
+		return {}
+	end
+
+	local ok, data = pcall(json.parse, file.read(filename))
+	if not ok or type(data) ~= "table" then
+		Debug.log("WARN", "SaveSystem", "Cannot load save file: " .. filename)
+		return {}
+	end
+	return data
 end
 
 function SaveSystem.save(filename, data)
-	Debug.log("INFO", "SaveSystem", "Saving save file: " .. filename)
+	file.write(filename, json.tostring(data))
 end
 
 return SaveSystem

@@ -1,0 +1,182 @@
+{
+  "players": [
+    {
+      "inventory": {
+        "slots": [
+          {
+            "count": 1,
+            "id": 30
+          },
+          {
+            "count": 1,
+            "id": 31
+          },
+          {
+            "count": 1,
+            "id": 32
+          },
+          {
+            "count": 1,
+            "id": 33
+          },
+          {
+            "count": 1,
+            "id": 35
+          },
+          {
+            "count": 1,
+            "id": 36
+          },
+          {
+            "count": 1,
+            "id": 37
+          },
+          {
+            "count": 1,
+            "id": 38
+          },
+          {
+            "count": 1,
+            "id": 39
+          },
+          {
+            "count": 1,
+            "id": 40
+          },
+          {
+            "count": 1,
+            "id": 41
+          },
+          {
+            "count": 1,
+            "id": 42
+          },
+          {
+            "count": 1,
+            "id": 43
+          },
+          {
+            "count": 1,
+            "id": 44
+          },
+          {
+            "count": 1,
+            "id": 45
+          },
+          {
+            "count": 1,
+            "id": 46
+          },
+          {
+            "count": 1,
+            "id": 47
+          },
+          {
+            "count": 1,
+            "id": 48
+          },
+          {
+            "count": 1,
+            "id": 49
+          },
+          {
+            "count": 1,
+            "id": 50
+          },
+          {
+            "count": 1,
+            "id": 51
+          },
+          {
+            "count": 1,
+            "id": 52
+          },
+          {
+            "count": 1,
+            "id": 53
+          },
+          {
+            "count": 1,
+            "id": 54
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          }
+        ],
+        "id": 1
+      },
+      "chosen-slot": 2,
+      "entity": 1,
+      "loading-chunks": true,
+      "camera": "core:first-person",
+      "name": "",
+      "instant-destruction": true,
+      "infinite-items": true,
+      "rotation": [
+        35.9688529968262,
+        -26.4502429962158,
+        0
+      ],
+      "flight": false,
+      "position": [
+        41.0560836791992,
+        77.3999633789062,
+        -51.2316665649414
+      ],
+      "suspended": false,
+      "noclip": false,
+      "interaction-distance": 10,
+      "spawnpoint": [
+        10.5787181854248,
+        69.1023864746094,
+        -0.292872548103333
+      ],
+      "id": 0
+    }
+  ]
+}

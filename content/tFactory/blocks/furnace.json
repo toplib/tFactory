@@ -1,0 +1,17 @@
+{
+  "script-name": "furnace",
+  "texture": "assembly",
+  "emission": [9, 10, 11],
+  "base:durability": 10.5,
+  "rotation": "pane",
+  "fields": {
+    "input": { "type": "char", "length": 48 },
+    "inputCount": { "type": "int32" },
+    "fuel": { "type": "char", "length": 48 },
+    "fuelCount": { "type": "int32" },
+    "output": { "type": "char", "length": 48 },
+    "outputCount": { "type": "int32" },
+    "progress": { "type": "float32" },
+    "burn": { "type": "float32" }
+  }
+}

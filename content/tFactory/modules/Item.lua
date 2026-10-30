@@ -6,40 +6,20 @@ local Item = {
 	is_interactable = false,
 }
 
+local function create(data)
+	return {
+		id = data.id or Item.id,
+		title = data.title or "Unknown",
+		description = data.description or "Unknown",
+		on_interact = data.on_interact,
+		is_interactable = data.is_interactable == true,
+	}
+end
+
 return function(data)
 	if data.id == nil then
-		print("tFactory - WARN | Cannot instance Item beacause id is 'nil', using void. \n Ret - Item:Void")
-		return Item
-	else
-		Item.id = data.id
+		print("tFactory - WARN | Cannot instance Item because id is 'nil', using void.")
+		return create(Item)
 	end
-
-	if data.title == nil then
-		print("tFactory - INFO | Cannot instance Item beacause title is 'nil', using void. \n Continue")
-		Item.title = "Unknown"
-	else
-		Item.id = data.id
-	end
-
-	if data.description == nil then
-		print("tFactory - INFo | Cannot instance Item beacause description is 'nil', using void. \n Continue")
-		Item.description = "Unknown"
-	else
-		Item.description = data.description
-	end
-
-	if data.on_interact == nil then
-		print("tFactory - INFO | Cannot instance Item beacause on_interact is 'nil', using void. \n Continue")
-		Item.on_interact = nil
-	else
-		Item.on_interact = data.on_interact
-	end
-
-	if data.is_interactable == nil then
-		print("tFactory - INFO | Cannot instance Item beacause is_interactable is 'nil', using void. \n Continue")
-		Item.is_interactable = nil
-	else
-		Item.is_interactable = data.is_interactable
-	end
-	return Item
+	return create(data)
 end

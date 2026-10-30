@@ -1,6 +1,6 @@
 {
   "next-player-id": 1,
-  "next-inventory-id": 9,
+  "next-inventory-id": 16,
   "generator": "tfactory:wasteland",
   "next-entity-id": 2,
   "name": "Gen Test 123",
@@ -10,8 +10,8 @@
   },
   "time": {
     "day-time-speed": 1,
-    "total-time": 124.489967586051,
-    "day-time": 0.503113985061646
+    "total-time": 159.099545122749,
+    "day-time": 0.52714866399765
   },
   "seed": 79420629243124
 }

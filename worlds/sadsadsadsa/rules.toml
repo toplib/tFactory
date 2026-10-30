@@ -1,0 +1,10 @@
+allow-fast-interaction = true
+allow-cheat-movement = true
+allow-destroy = true
+allow-flight = true
+allow-noclip = true
+allow-attack = true
+allow-debug-cheats = true
+do-loot-non-player = true
+allow-content-access = true
+allow-cheats = true

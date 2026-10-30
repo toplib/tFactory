@@ -2,13 +2,14 @@ local CellProcessor = {}
 
 local Debug = require("Debug")
 local Serializer = require("serialization/Serializer")
+local CellStorage = require("CellStorage")
+local ItemStack = require("ItemStack")
 
 CellProcessor.templates = {}   -- [class] = template
 CellProcessor.cells = {}       -- [key] = cell
 CellProcessor.dirtyCells = {}  -- [key] = cell
 CellProcessor.activeCells = {} -- [key] = cell
 
-local OFFSET = 2097152
 local STEP = 1.0 / 20.0
 
 local tick = 0
@@ -23,7 +24,7 @@ local neighbors = {
 }
 
 function CellProcessor.positionKey(x, y, z)
-	return (x + OFFSET) + y * 4194304 + (z + OFFSET) * 1073741824
+	return x .. ":" .. y .. ":" .. z
 end
 
 local function round(value)
@@ -38,19 +39,34 @@ local function parseVec3(value)
 	return round(value.x), round(value.y), round(value.z)
 end
 
-local function markNeighborsDirty(x, y, z)
+local function hashKey(key)
+	local hash = 0
+	for i = 1, #key do
+		hash = (hash * 31 + string.byte(key, i)) % 2147483647
+	end
+	return hash
+end
+
+local function touch(cell, wake)
+	cell.dirty = true
+	if wake then
+		cell.wake = true
+	end
+	CellProcessor.dirtyCells[cell.key] = cell
+end
+
+local function touchNeighbors(x, y, z, wake)
 	for i = 1, #neighbors do
-		CellProcessor.markDirty(x + neighbors[i][1], y + neighbors[i][2],
-			z + neighbors[i][3])
+		local neighbor = CellProcessor.getCell(x + neighbors[i][1],
+			y + neighbors[i][2], z + neighbors[i][3])
+		if neighbor ~= nil then
+			touch(neighbor, wake)
+		end
 	end
 end
 
 local function shouldWork(cell)
-	local template = cell.template
-	if template.alwaysActive then
-		return true
-	end
-	return template.condition == nil or template.condition(cell)
+	return cell.template.condition == nil or cell.template.condition(cell)
 end
 
 function CellProcessor.registerTemplate(template)
@@ -83,8 +99,29 @@ function CellProcessor.markDirty(x, y, z)
 		return
 	end
 
-	cell.dirty = true
-	CellProcessor.dirtyCells[cell.key] = cell
+	cell.save = true
+	touch(cell, false)
+	touchNeighbors(x, y, z, true)
+end
+
+function CellProcessor.deactivate(cell)
+	if not cell.active then
+		return
+	end
+
+	cell.active = false
+	CellProcessor.activeCells[cell.key] = nil
+	CellStorage.save(cell)
+	cell.save = false
+	touchNeighbors(cell.x, cell.y, cell.z, false)
+end
+
+function CellProcessor.block(cell)
+	cell.blocked = true
+	cell.active = false
+	CellProcessor.activeCells[cell.key] = nil
+	CellStorage.save(cell)
+	cell.save = false
 end
 
 function CellProcessor.setCell(x, y, z, class, rotation)
@@ -92,13 +129,14 @@ function CellProcessor.setCell(x, y, z, class, rotation)
 	local template = CellProcessor.templates[class]
 
 	if template == nil then
-		if CellProcessor.cells[key] ~= nil then
-			CellProcessor.removeCell(x, y, z)
-		end
-		return nil
+		Debug.log("WARN", "CellProcessor",
+			'Unknown cell class "' .. tostring(class) .. '"')
+		return CellProcessor.cells[key]
 	end
 
 	local cell = CellProcessor.cells[key]
+	local created = cell == nil or cell.class ~= class
+
 	if cell == nil then
 		cell = {
 			key = key,
@@ -112,53 +150,53 @@ function CellProcessor.setCell(x, y, z, class, rotation)
 			dz = 0,
 			dirty = true,
 			active = false,
-			item = nil,
-			progress = 0,
+			blocked = false,
+			wake = false,
+			save = false,
+			offset = 0,
+			state = {},
 		}
 		CellProcessor.cells[key] = cell
-		Debug.log(
-			"INFO",
-			"CellProcessor",
-			'Created cell "' ..
-			class .. '" with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"'
-		)
-	elseif cell.class ~= class then
+	elseif created then
 		if cell.template.onRemoved ~= nil then
 			cell.template.onRemoved(cell)
 		end
-		Debug.log(
-			"INFO",
-			"CellProcessor",
-			'Replacing: "'
-			.. cell.class
-			.. '", to: "'
-			.. class
-			.. '". With position: "x:'
-			.. x
-			.. "y:"
-			.. y
-			.. "z:"
-			.. z
-			.. '"'
-		)
+
 		cell.class = class
 		cell.template = template
-		cell.item = nil
-		cell.progress = 0
+		cell.state = {}
+		cell.blocked = false
+		cell.active = false
+		cell.wake = false
+		cell.save = false
+		CellProcessor.activeCells[key] = nil
+
+		Debug.log("INFO", "CellProcessor",
+			'Replaced cell with position: "x:' .. x .. "y:" .. y .. "z:" .. z ..
+			'"')
 	end
+
+	cell.class = class
+	cell.template = template
 
 	if rotation ~= nil then
 		cell.dx, cell.dy, cell.dz = parseVec3(rotation)
 	end
 
-	cell.dirty = true
-	CellProcessor.dirtyCells[key] = cell
+	if created then
+		cell.offset = hashKey(key) % (template.tickInterval or 1)
+		cell.state = CellStorage.read(cell)
+		if template.onPlaced ~= nil then
+			template.onPlaced(cell)
+		end
 
-	if template.onPlaced ~= nil then
-		template.onPlaced(cell)
+		Debug.log("INFO", "CellProcessor",
+			'Created cell "' .. class .. '" with position: "x:' .. x .. "y:" ..
+			y .. "z:" .. z .. '"')
 	end
 
-	markNeighborsDirty(x, y, z)
+	touch(cell, false)
+	touchNeighbors(x, y, z, true)
 	return cell
 end
 
@@ -172,39 +210,40 @@ function CellProcessor.removeCell(x, y, z)
 	if cell.template.onRemoved ~= nil then
 		cell.template.onRemoved(cell)
 	end
+	CellStorage.save(cell)
 
 	CellProcessor.cells[key] = nil
 	CellProcessor.dirtyCells[key] = nil
 	CellProcessor.activeCells[key] = nil
+	touchNeighbors(x, y, z, true)
 
 	Debug.log("INFO", "CellProcessor",
 		'Removed cell with position: "x:' .. x .. "y:" .. y .. "z:" .. z .. '"')
-
-	markNeighborsDirty(x, y, z)
 end
 
-function CellProcessor.pushItem(cell, item)
+function CellProcessor.pushItem(cell, stack)
+	if ItemStack.isEmpty(stack) then
+		return 0
+	end
 	if cell.dx == 0 and cell.dy == 0 and cell.dz == 0 then
-		return false
+		return stack.count
 	end
 
 	local neighbor = CellProcessor.getCell(cell.x + cell.dx, cell.y + cell.dy,
 		cell.z + cell.dz)
 	if neighbor == nil then
-		return false
+		return stack.count
 	end
 
 	local template = neighbor.template
 	if template.acceptItem == nil or template.putItem == nil then
-		return false
+		return stack.count
 	end
-	if not template.acceptItem(neighbor, item) then
-		return false
+	if not template.acceptItem(neighbor, stack) then
+		return stack.count
 	end
 
-	template.putItem(neighbor, item)
-	CellProcessor.markDirty(neighbor.x, neighbor.y, neighbor.z)
-	return true
+	return template.putItem(neighbor, stack)
 end
 
 function CellProcessor.updateCell(cell)
@@ -227,36 +266,68 @@ function CellProcessor.loadIntialState(cells)
 	Debug.log("INFO", "CellProcessor", "Done!")
 end
 
-function CellProcessor.step()
+function CellProcessor.step(dt)
 	tick = tick + 1
+	dt = dt or STEP
 
-	for key, cell in pairs(CellProcessor.dirtyCells) do
-		CellProcessor.dirtyCells[key] = nil
-		cell.dirty = false
+	local dirty = CellProcessor.dirtyCells
+	CellProcessor.dirtyCells = {}
 
-		if shouldWork(cell) then
-			cell.active = true
-			CellProcessor.activeCells[key] = cell
-		else
-			cell.active = false
-			CellProcessor.activeCells[key] = nil
+	for key, cell in pairs(dirty) do
+		if CellProcessor.cells[key] == cell then
+			local active = cell.wake or shouldWork(cell)
+			cell.wake = false
+			cell.dirty = false
+
+			if active then
+				if not cell.active then
+					cell.active = true
+					CellProcessor.activeCells[key] = cell
+				end
+			elseif cell.active then
+				CellProcessor.deactivate(cell)
+			end
+
+			if cell.save then
+				cell.save = false
+				CellStorage.save(cell)
+			end
 		end
 	end
 
+	local active = {}
 	for key, cell in pairs(CellProcessor.activeCells) do
-		local template = cell.template
-		local interval = template.tickInterval or 1
+		if CellProcessor.cells[key] == cell then
+			active[#active + 1] = cell
+		end
+	end
 
-		if interval <= 1 or (tick + key) % interval == 0 then
-			if template.work ~= nil then
-				template.work(cell, STEP * interval)
+	for i = 1, #active do
+		local cell = active[i]
+		if cell.active and CellProcessor.cells[cell.key] == cell then
+			local template = cell.template
+			local interval = template.tickInterval or 1
+
+			if interval <= 1 or (tick + cell.offset) % interval == 0 then
+				if template.work ~= nil then
+					template.work(cell, dt * interval)
+				end
+			end
+
+			if cell.active and not shouldWork(cell) then
+				CellProcessor.deactivate(cell)
+			end
+
+			if tick % 20 == 0 then
+				CellStorage.save(cell)
 			end
 		end
+	end
+end
 
-		if not shouldWork(cell) then
-			cell.active = false
-			CellProcessor.activeCells[key] = nil
-		end
+function CellProcessor.saveAll()
+	for _, cell in pairs(CellProcessor.cells) do
+		CellStorage.save(cell)
 	end
 end
 

@@ -1,4 +1,5 @@
 {
+  "script-name": "pipe",
   "model": "aabb",
   "hitbox": [0.25, 0.0, 0.25, 0.5, 1.0, 0.5],
   "texture-faces": [
@@ -12,5 +13,9 @@
   "rotation": "pipe",
   "light-passing": true,
   "material": "base:metal",
-  "base:durability": 4.7
+  "base:durability": 4.7,
+  "fields": {
+    "item": { "type": "char", "length": 48 },
+    "itemCount": { "type": "int32" }
+  }
 }

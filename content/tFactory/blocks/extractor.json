@@ -2,5 +2,11 @@
   "script-name": "extractor",
   "texture": "extractor",
   "emission": [9, 10, 11],
-  "base:durability": 10.5
+  "base:durability": 10.5,
+  "rotation": "pane",
+  "fields": {
+    "item": { "type": "char", "length": 48 },
+    "itemCount": { "type": "int32" },
+    "progress": { "type": "float32" }
+  }
 }

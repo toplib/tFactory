@@ -1,10 +1,16 @@
-local CellProcessor = require("CellProcessor")
-local Extractor = require("blocks/Extractor")
+local CellLifecycle = require("CellLifecycle")
+require("blocks/Extractor")
+
+local CLASS = "tfactory:extractor"
 
 function on_block_present(x, y, z)
-	CellProcessor.setCell(x, y, z, block.name(block.get(x, y, z)))
+	CellLifecycle.present(x, y, z, CLASS)
 end
 
 function on_block_removed(x, y, z)
-	CellProcessor.removeCell(x, y, z)
+	CellLifecycle.removed(x, y, z, CLASS)
+end
+
+function on_replaced(x, y, z)
+	CellLifecycle.save(x, y, z, CLASS)
 end

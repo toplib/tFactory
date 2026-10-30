@@ -51,62 +51,20 @@ function tFactory.start()
 	Debug.log("INFO", "tFactory", "Starting Elements Database")
 	Elements.Elements()
 	Debug.log("INFO", "tFactory", 'Done "Elements Database"!')
-
-	local cells = {
-		{
-			position = "x:0y:0z:0",
-			rotation = "x:8y:1z:0",
-			value = "tfactory:crafter",
-		},
-		{
-			position = "x:1y:2z:0",
-			rotation = "x:1y:5z:0",
-			value = "tfactory:rail",
-		},
-		{
-			position = "x:0y:3z:0",
-			rotation = "x:1y:0z:5",
-			value = "tfactory:rail",
-		},
-		{
-			position = "x:3y:0z:1",
-			rotation = "x:4y:0z:1",
-			value = "tfactory:furnance",
-		},
-	}
-	CellProcessor.loadIntialState(cells)
-
-	local cellToUpdateInCells = {
-		position = "x:0y:0z:0",
-		rotation = "x:9y:9z:9",
-		value = "tfactory:null",
-	}
-	local cellToUpdateNotInCells = {
-		position = "x:15y:11z:10",
-		rotation = "x:1y:1z:1",
-		value = "tfactory:not_null",
-	}
-
-	CellProcessor.updateCell(cellToUpdateInCells)
-	CellProcessor.updateCell(cellToUpdateNotInCells)
 end
 
-function tFactory.tick()
+function tFactory.tick(dt)
 	SoundEngine.tick()
-	CellProcessor.step()
+	CellProcessor.step(dt)
+end
+
+function tFactory.onSave()
+	CellProcessor.saveAll()
 end
 
 function tFactory.onShutdown()
+	CellProcessor.saveAll()
 	SoundEngine.onShutdown()
-end
-
-function tFactory.onBlockPlaced(blockid, x, y, z)
-	local dx, dy, dz = block.get_X(x, y, z)
-	CellProcessor.setCell(x, y, z, block.name(blockid), { x = dx, y = dy, z = dz })
-end
-
-function tFactory.onBlockBroken(blockid, x, y, z)
-	CellProcessor.removeCell(x, y, z)
 end
 
 -- GameStorage abstraction

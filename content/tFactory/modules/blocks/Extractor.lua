@@ -1,25 +1,48 @@
 local Extractor = {}
 
 local CellProcessor = require("CellProcessor")
+local ItemStack = require("ItemStack")
 
 Extractor.class = "tfactory:extractor"
-Extractor.alwaysActive = true
+Extractor.output = "tfactory:iron_ore"
+Extractor.interval = 1.0
+
+Extractor.storage = {
+	{ key = "item", field = "item", type = "stack" },
+	{ key = "progress", field = "progress", type = "number" },
+}
+
+Extractor.condition = function(cell)
+	return not cell.blocked
+end
+
+Extractor.onPlaced = function(cell)
+	cell.state.progress = cell.state.progress or 0
+end
 
 Extractor.work = function(cell, dt)
-	if cell.item ~= nil then
-		if CellProcessor.pushItem(cell, cell.item) then
-			cell.item = nil
+	local item = cell.state.item
+	if item ~= nil then
+		local left = CellProcessor.pushItem(cell, item)
+		if left <= 0 then
+			cell.state.item = nil
+			cell.blocked = false
+			CellProcessor.markDirty(cell.x, cell.y, cell.z)
+		else
+			CellProcessor.block(cell)
 		end
 		return
 	end
 
-	cell.progress = cell.progress + dt
-	if cell.progress < 1.0 then
+	cell.state.progress = cell.state.progress + dt
+	if cell.state.progress < Extractor.interval then
 		return
 	end
 
-	cell.progress = 0
-	cell.item = "tfactory:iron_ore"
+	cell.state.progress = cell.state.progress - Extractor.interval
+	cell.state.item = ItemStack.create(Extractor.output, 1)
+	cell.blocked = false
+	CellProcessor.markDirty(cell.x, cell.y, cell.z)
 end
 
 CellProcessor.registerTemplate(Extractor)

@@ -34,6 +34,10 @@ local function registerElements()
   for _, element in ipairs(Elements.elements) do
     Debug.log("INFO", "Elements", "Registering element " .. element.id)
     element.element.constructor({ data = false })
+    Events.dispatch("onElementsDatabaseElementAdd", {
+      id = element.id,
+      class = element.class,
+    })
   end
 end
 
@@ -41,6 +45,15 @@ function Elements.Elements()
   Debug.log("INFO", "Elements", "Initializing elements database")
   registerEvents()
   registerElements()
+end
+
+function Elements.getById(id)
+  for i = 1, #Elements.elements do
+    if Elements.elements[i].id == id then
+      return Elements.elements[i]
+    end
+  end
+  return nil
 end
 
 return Elements

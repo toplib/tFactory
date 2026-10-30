@@ -11,5 +11,9 @@
     "conveyor-belt",
     "conveyor-belt",
   ],
-  "rotation": "pane"
+  "rotation": "pane",
+  "fields": {
+    "item": { "type": "char", "length": 48 },
+    "itemCount": { "type": "int32" }
+  }
 }

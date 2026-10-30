@@ -34,7 +34,7 @@ padding = 2
 enable-fog = false
 fog-curve = 1
 backlight = false
-dense-render = false
+dense-render = true
 gamma = 1
 frustum-culling = true
 skybox-resolution = 96
@@ -42,11 +42,11 @@ chunk-max-vertices = 200000
 chunk-max-vertices-dense = 800000
 chunk-max-renderers = 6
 particles-batch-vertices = 4096
-advanced-render = false
+advanced-render = true
 ssao = 0
 shadows-quality = 0
 dense-render-distance = 56
-soft-lighting = false
+soft-lighting = true
 clouds-quality = 0
 
 [ui]
